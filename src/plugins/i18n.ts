@@ -6,7 +6,7 @@ const options: I18nOptions = {
   fallbackLocale: 'en-US',
   availableLocales: ['en-US'],
   messages: { 'en-US': enUS },
-  legacy: false
+  legacy: false,
 }
 
 const i18n = createI18n(options)

@@ -1,8 +1,16 @@
 <template>
-  <img
-    alt="Vue logo"
-    src="./assets/logo.png"
-  >
+  <RouterView v-slot="{ Component }">
+    <template v-if="Component">
+      <Suspense>
+        <component :is="Component" />
+
+        <template #fallback>
+          Loading...
+          <img src="./assets/logo.png" />
+        </template>
+      </Suspense>
+    </template>
+  </RouterView>
 </template>
 
 <script setup lang="ts">

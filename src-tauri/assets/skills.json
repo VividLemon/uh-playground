@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1, 
+        "world": "a",
+        "skills": {
+            "art": [
+                {
+                    "name": "Artz", 
+                    "description": "", 
+                    "base": "Dexterity", 
+                    "experts": {
+                        "medium": ["oils", "photographs", "sculpture", "glass", "stained glass", "chalk", "fibers", "metal", "pastels", "watercolor"],
+                        "style": ["cubism", "pointillism", "impressionism", "installation"]
+                    }
+                }
+            ]
+        }
+    }
+]

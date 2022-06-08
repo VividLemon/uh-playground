@@ -12,7 +12,25 @@
   },
   "tauri": {
     "allowlist": {
-      "all": true
+      "all": false,
+      "fs": {
+        "all": false,
+        "copyFile": false,
+        "createDir": false,
+        "readDir": false,
+        "readFile": true,
+        "removeDir": false,
+        "removeFile": false,
+        "renameFile": false,
+        "scope": ["$RESOURCE/assets/", "$RESOURCE/assets/*"],
+        "writeFile": true
+      },
+      "path": {
+        "all": true
+      },
+      "notification": {
+        "all": true
+      }
     },
     "bundle": {
       "active": true,
@@ -38,7 +56,7 @@
         "providerShortName": null,
         "signingIdentity": null
       },
-      "resources": [],
+      "resources": ["assets/*"],
       "shortDescription": "",
       "targets": "all",
       "windows": {
