@@ -6,6 +6,7 @@ type BaseResource =
   | 'Strength'
   | 'Mind/2'
   | 'Body/2'
+  | 'Wealth/2'
 type Limit = 'Universal' | 'Exclusive' | 'Acclimatable'
 
 export interface Skill {

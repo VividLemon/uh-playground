@@ -1,8 +1,9 @@
 import { Skill } from '.'
-type Class = 'build' | 'art'
+type Class = 'build' | 'art' | 'buy'
 
 export interface Skills {
   id: number
   world: string
-  skills: Record<Class, Array<Skill>>
+  // eslint-disable-next-line no-unused-vars
+  skills: { [K in Class]?: Array<Skill> }
 }

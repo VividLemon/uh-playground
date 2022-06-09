@@ -81,7 +81,7 @@ export const a: Array<Skills> = [
           limit: 'Exclusive',
           name: 'Etiquette',
           description:
-            'Etiquette represents manners, means of address, and other social skills. Table manners, mode of speech, specific vocabulary, dress, hairstyle, political and social awareness, breadth and depth of experiences (such as acquaintances and travel) rely on etiquette. First impressions often call for etiquette rolls.',
+            'Etiquette represents manners, means of address, and other social skills. Table manners, mode of speech, specific vocabulary, dress, hairstyle, political and social awareness, breadth and depth of experiences (such as acquaintances and travel) rely on Etiquette. First impressions often call for Etiquette rolls.',
           experts: {
             style: ['dress', 'grooming', 'greetings'],
             nationality: ['Nation'],
@@ -125,7 +125,7 @@ export const a: Array<Skills> = [
           limit: 'Universal',
           name: 'Thespianism',
           description:
-            'Thespianism encompasses acting, mimicry, impersonation, general knowledge of stage management, stagecraft, lighting, and makeup. Performances range from miming to comic improvisation. Impersonation in a covert operation requires skill combination with deception',
+            'Thespianism encompasses acting, mimicry, impersonation, general knowledge of stage management, stagecraft, lighting, and makeup. Performances range from miming to comic improvisation. Impersonation in a covert operation requires skill combination with Deception',
           experts: {
             genre: [
               'daytime drama',
@@ -191,7 +191,7 @@ export const a: Array<Skills> = [
           base: 'Dexterity',
           name: 'Cooking',
           description:
-            'Cook encompasses processing food into meals and consumable products. At lower ranks, cook creates meals while higher ranks allow production of refined wines, gourmet foods, and specialized ales. Perfume creation is skill combination of botany and cook.',
+            'Cook encompasses processing food into meals and consumable products. At lower ranks, cook creates meals while higher ranks allow production of refined wines, gourmet foods, and specialized ales. Perfume creation is skill combination of Botany and Cook',
           limit: 'Acclimatable',
           experts: {
             course: ['desserts', 'soups', 'salads', 'main'],
@@ -206,7 +206,7 @@ export const a: Array<Skills> = [
           name: 'Electronics',
           limit: 'Exclusive',
           description:
-            'Electronics covers knowledge of electric inventions, including design, application, and repair. Rulings are genre-specific. Some genres utilize electronics for vacuum-tube technology to transitor technology. Other genres use chips of silicon, transitor boards, and nanotechnology. Other genres may use advances technology like magnetically suspended energy portals, living electricity, etc. Construction of elecctronic items usually requires skill combination. Other skill combinations include biogenetic, computers, neuropathway replication, and nanotechnology',
+            'Electronics covers knowledge of electric inventions, including design, application, and repair. Rulings are genre-specific. Some genres utilize Electronics for vacuum-tube technology to transitor technology. Other genres use chips of silicon, transitor boards, and nanotechnology. Other genres may use advances technology like magnetically suspended energy portals, living electricity, etc. Construction of elecctronic items usually requires skill combination. Other skill combinations include biogenetic, computers, neuropathway replication, and nanotechnology',
           experts: {
             style: [
               'appliances',
@@ -243,6 +243,141 @@ export const a: Array<Skills> = [
             weapon: ['type'],
             taxidermy: ['vermin', 'animals', 'dragons', 'plants'],
           },
+        },
+        {
+          base: 'Mind/2',
+          name: 'Manufacturing',
+          description:
+            'Manufacturing is knowledge of process and methodology for production of products, composition to assembly lines. Skill combination pairs Manufacturing with other skills to allow mass production, such as mass agriculture, and mass textile production.',
+          limit: 'Exclusive',
+        },
+        {
+          name: 'Masonry',
+          base: 'Strength',
+          limit: 'Acclimatable',
+          description:
+            'Masonry allows the use of cut stone to build structures from mortar, stone, and brick.',
+          experts: {
+            style: [
+              'monument',
+              'hearth',
+              'foundation',
+              'tile',
+              'residential',
+              'castle',
+              'free-standing walls',
+              'tunnels',
+              'traps',
+            ],
+          },
+        },
+        {
+          name: 'Mechanics/Lockpicking',
+          base: 'Body/2',
+          limit: 'Exclusive',
+          description:
+            'Mechanics creates, repairs, and manipulates mechanical moving objects, such as locks, engines, and appliances. Inventions with moving parts embody this skill. Applications vary from combustion engines to locks.',
+          experts: {
+            style: ['lockpicking', 'household', 'traps', 'transmissions'],
+            engine: ['combustion', 'fusion', 'hyperdrive', 'steam'],
+          },
+        },
+        {
+          base: 'Memory',
+          description:
+            'Pharmaceuticals permits extraction, dispensing, identification, and administration of various chemicals for live organisms. Further genre expansions describe medication, drugs, and poisons. Professionals provide details of pharmaceutical interactions, reactions, and safety administration data. Creation of refined pharmaceuticals, drugs, and toxins requires a laboratory, equipment, and skill combination with Chemistry.',
+          limit: 'Exclusive',
+          name: 'Pharmceuticals/Toxicology',
+          experts: {
+            style: ['identification', 'drug interactions'],
+            toxin: ['animal', 'dragon', 'plant', 'vermin'],
+          },
+        },
+        {
+          base: 'Mind/2',
+          name: 'Robotics',
+          description:
+            'Robotics allows identification, maintenance, and operation of robots. Robots are non-biological and artificial; they have no Soul. Skill combinations are useful in reprogramming (Computer Science), construction (Construction; Manufacturing), or repair (Mechanics). At very high rank, designs of new robotic prototypes are possible',
+          limit: 'Exclusive',
+          experts: {
+            environment: [
+              'artic',
+              'space',
+              'nanotechnology',
+              'underwater',
+              'extreme heat',
+            ],
+          },
+        },
+        {
+          base: 'Strength',
+          name: 'Smithing/Armoring',
+          description:
+            'Smithing transforms raw materials and ore into metals using a forge. Smithing creates metallic armors, weapons, parts, and refined materials (including welding solder). Welding is a common use. Jewelry and artwork use skill combination with Artistry. Smelting is a skill combination with Geology',
+          limit: 'Exclusive',
+          experts: {
+            metal: [
+              'iron',
+              'steel',
+              'gold',
+              'silver',
+              'titanium',
+              'adamantium',
+              'mithril',
+            ],
+            item: [
+              'ship hull',
+              'katana',
+              'flails',
+              'gears',
+              'wheels',
+              'shields',
+              'banded mail',
+              'plate mail',
+              'rings',
+              'nechlaces',
+              'dental tools',
+              'scalpels',
+              'utensils',
+            ],
+          },
+        },
+        {
+          name: 'Textiles',
+          base: 'Dexterity',
+          description:
+            'Textiles creates and manipulates fibers to construct objects such as bags, baskets, books, carpets, clothing, paper, ropes, rugs, sandals, and other woven items.',
+          limit: 'Exclusive',
+          experts: {
+            fiber: ['cotton', 'hemp', 'nylon', 'reed', 'silk'],
+            item: [
+              'bags',
+              'pants',
+              'poncho',
+              'paper',
+              'papyrus',
+              'rope',
+              'rugs',
+              'sandals',
+              'shawl',
+            ],
+          },
+        },
+      ],
+      buy: [
+        {
+          base: 'Deduction',
+          name: 'Appraisal',
+          description:
+            'Appraisal identifies monetary value of goods and services. Appraisal uses skill combination and employs concealed rolls. Players choose the applicable skill and Guides assign shifts dependent on the rank. A failed roll allows the Guide to fabricate values above or below the true value',
+          limit: 'Exclusive',
+        },
+        {
+          base: 'Wealth/2',
+          description:
+            'Business Administration is accounting, management, and marketing of companies. Heroes with this skill maximize efficiency and income, manage guilds as clients, and discover the current finaancial health of other businesses. This skill is used with skill combination. For instance, a floral shop manager would require this skill and Botany',
+          limit: 'Exclusive',
+          name: 'Business Administration',
         },
       ],
     },
