@@ -9,7 +9,7 @@ export const a: Array<Skills> = [
         {
           name: 'Artistry',
           description:
-            'Artistry creates works of art using materials. These creations include traditional subjects, calligraphy, drawings, sculpture, glassblowing, painting, pottery, and large-scale installations. Additions in modern genres include mixed media, cinematic media, photography, and digitial media.',
+            'Artistry creates works of art using materials. These creations include traditional subjects, calligraphy, drawings, sculpture, glassblowing, painting, pottery, and large-scale installations. Additions in modern genres include mixed media, cinematic media, photography, and digital media.',
           limit: 'Universal',
           base: 'Dexterity',
           experts: {
@@ -44,7 +44,7 @@ export const a: Array<Skills> = [
           base: 'Deduction',
           limit: 'Universal',
           description:
-            'Deception promotes or detracts information from governments, groups, and individuals. A person intentionally misinterprets facts for ulterior motives. Altered event interpretation changed identity or background, hiding objects, lies, propoganda, and misinformation are tools of deception. Deception is essential for spies, scoundrels, and those working the criminal underwold.',
+            'Deception promotes or detracts information from governments, groups, and individuals. A person intentionally misinterprets facts for ulterior motives. Altered event interpretation changed identity or background, hiding objects, lies, propaganda, and misinformation are tools of deception. Deception is essential for spies, scoundrels, and those working the criminal underworld.',
           pairs: [
             {
               skill: 'Domestics',
@@ -153,7 +153,7 @@ export const a: Array<Skills> = [
         {
           base: 'Memory',
           description:
-            'Architecture is knowledge of structural design. Heroes plan draft, and oversee construction of buildings, vehicles, ships, spacefaring modules, and so on. This skill functions with skill combination.',
+            'Architecture is knowledge of structural design. Heroes plan draft, and oversee construction of buildings, vehicles, ships, space-faring modules, and so on. This skill functions with skill combination.',
           limit: 'Acclimatable',
           name: 'Architecture',
           pairs: [
@@ -184,7 +184,7 @@ export const a: Array<Skills> = [
           experts: {
             material: ['ash', 'pine', 'oak', 'granite', 'sandstone', 'tin'],
             style: ['plumbing', 'wiring', 'furniture', 'traps'],
-            vehicle: ['car', 'ship', 'starship', 'plane', 'hovercraft'],
+            vehicle: ['car', 'ship', 'star-ship', 'plane', 'hovercraft'],
           },
         },
         {
@@ -206,7 +206,7 @@ export const a: Array<Skills> = [
           name: 'Electronics',
           limit: 'Exclusive',
           description:
-            'Electronics covers knowledge of electric inventions, including design, application, and repair. Rulings are genre-specific. Some genres utilize Electronics for vacuum-tube technology to transitor technology. Other genres use chips of silicon, transitor boards, and nanotechnology. Other genres may use advances technology like magnetically suspended energy portals, living electricity, etc. Construction of elecctronic items usually requires skill combination. Other skill combinations include biogenetic, computers, neuropathway replication, and nanotechnology',
+            'Electronics covers knowledge of electric inventions, including design, application, and repair. Rulings are genre-specific. Some genres utilize Electronics for vacuum-tube technology to transistor technology. Other genres use chips of silicon, transistor boards, and nanotechnology. Other genres may use advances technology like magnetically suspended energy portals, living electricity, etc. Construction of electronic items usually requires skill combination. Other skill combinations include bio-genetic, computers, neuropathway replication, and nanotechnology',
           experts: {
             style: [
               'appliances',
@@ -227,15 +227,15 @@ export const a: Array<Skills> = [
           name: 'Farming',
           limit: 'Exclusive',
           experts: {
-            style: ['hydroponics', 'viticulture', 'microculture', 'organic'],
+            style: ['hydroponics', 'viticulture', 'micro-culture', 'organic'],
             crop: ['trees', 'fruits', 'grains', 'domesticated animals'],
           },
         },
         {
           base: 'Body/2',
-          name: 'Leatherwork',
+          name: 'Leather-work',
           description:
-            'Leatherwork enables curing of animal skins and hides to produce leather. Skill use covers cobbling, tanning, taxidermy, and manufacturing of clothing and armor. Skill combination is necessary for mummification, dyed goods, and studded equipment.',
+            'Leather-work enables curing of animal skins and hides to produce leather. Skill use covers cobbling, tanning, taxidermy, and manufacturing of clothing and armor. Skill combination is necessary for mummification, dyed goods, and studded equipment.',
           limit: 'Exclusive',
           experts: {
             style: ['tanning', 'accessories', 'shields'],
@@ -272,14 +272,14 @@ export const a: Array<Skills> = [
           },
         },
         {
-          name: 'Mechanics/Lockpicking',
+          name: 'Mechanics/Lock-picking',
           base: 'Body/2',
           limit: 'Exclusive',
           description:
             'Mechanics creates, repairs, and manipulates mechanical moving objects, such as locks, engines, and appliances. Inventions with moving parts embody this skill. Applications vary from combustion engines to locks.',
           experts: {
-            style: ['lockpicking', 'household', 'traps', 'transmissions'],
-            engine: ['combustion', 'fusion', 'hyperdrive', 'steam'],
+            style: ['lock-picking', 'household', 'traps', 'transmissions'],
+            engine: ['combustion', 'fusion', 'hyper-drive', 'steam'],
           },
         },
         {
@@ -287,7 +287,7 @@ export const a: Array<Skills> = [
           description:
             'Pharmaceuticals permits extraction, dispensing, identification, and administration of various chemicals for live organisms. Further genre expansions describe medication, drugs, and poisons. Professionals provide details of pharmaceutical interactions, reactions, and safety administration data. Creation of refined pharmaceuticals, drugs, and toxins requires a laboratory, equipment, and skill combination with Chemistry.',
           limit: 'Exclusive',
-          name: 'Pharmceuticals/Toxicology',
+          name: 'Pharmaceuticals/Toxicology',
           experts: {
             style: ['identification', 'drug interactions'],
             toxin: ['animal', 'dragon', 'plant', 'vermin'],
@@ -301,7 +301,7 @@ export const a: Array<Skills> = [
           limit: 'Exclusive',
           experts: {
             environment: [
-              'artic',
+              'arctic',
               'space',
               'nanotechnology',
               'underwater',
@@ -335,7 +335,7 @@ export const a: Array<Skills> = [
               'banded mail',
               'plate mail',
               'rings',
-              'nechlaces',
+              'necklaces',
               'dental tools',
               'scalpels',
               'utensils',
@@ -375,9 +375,170 @@ export const a: Array<Skills> = [
         {
           base: 'Wealth/2',
           description:
-            'Business Administration is accounting, management, and marketing of companies. Heroes with this skill maximize efficiency and income, manage guilds as clients, and discover the current finaancial health of other businesses. This skill is used with skill combination. For instance, a floral shop manager would require this skill and Botany',
+            'Business Administration is accounting, management, and marketing of companies. Heroes with this skill maximize efficiency and income, manage guilds as clients, and discover the current financial health of other businesses. This skill is used with skill combination. For instance, a floral shop manager would require this skill and Botany',
           limit: 'Exclusive',
           name: 'Business Administration',
+        },
+        {
+          name: 'Mercantilism',
+          base: 'Wealth/2',
+          description:
+            'Economics analyzes markets and commodities used for bartering and monetary exchange. Merchants maximize profits through distribution and delivery to starving markets. Economics can predict how likely supply and demand affect both the micro- and macro-economic environments',
+          limit: 'Acclimatable',
+          experts: {
+            commodity: [
+              'gold',
+              'corn',
+              'oil',
+              'textiles',
+              'produce',
+              'beef',
+              'pork',
+              'waste',
+              'nuclear byproducts',
+            ],
+          },
+        },
+        {
+          base: 'Wealth/2',
+          description:
+            'Finance promotes lending and investing in genres with credit systems or monetary exchanges. The management and investment of stock, bonds, futures, options, commodities, and other accounting methods provide profit. A further use of this skill is to cure financial addictions and Wealth diseases. This procedure-base skill cures damaged Wealth at a rate of 1d6/10 rank and can only be used once per day per patient; such use also removes all non-lethal damage. Target numbers are TN100, TN50 using the appropriate equipment and environment. Other modifiers apply according to Guide discretion. Consultation with this skill restores temporary Capital and Employability damage one point per hour up to rank modifier. Clients can sustain only one session per day. Target number is TN150, TN100 using the appropriate equipment and environment.',
+          limit: 'Acclimatable',
+          name: 'Finance',
+          experts: {
+            diseases: ['shopping', 'gambling', 'hoarding', 'MMORG Addiction'],
+          },
+        },
+        {
+          name: 'Games, Wealth',
+          base: 'Wealth/2',
+          limit: 'Acclimatable',
+          description:
+            'Games wealth applies theory and practice of games involving money. Topics include gambling and events used to generate money. The Guide decides the shifts for each individual situation. Successful gambling temporarily raises Capital for the duration as the Guide deems fit, typically for the adventure. Losses incur permanent Capital damage. Be warned, many institutions use methods that cause negative shifts. A skill combination with Perception may spot cheaters of games (TN150). Unless otherwise noted, this mechanic can only be used once per adventure. TN200-Temporarily raise Capital 2d6, TN150-Temporarily raise Capital 1d6, TN100-Temporarily raise Capital 1d3, Failure-Permanent lose Capital 1d6',
+          experts: {
+            game: ['blackjack', 'horse races', 'craps', 'baccarat'],
+          },
+        },
+      ],
+      camp: [
+        {
+          base: 'Mind/2',
+          limit: 'Exclusive',
+          name: 'Extreme Environments',
+          description:
+            'Extreme Environments comprises knowledge of various extreme and hostile environments. This skill is used with skill combinations. Whereas Hunt covers normal environments, Extreme Environments handles adverse, abnormal environments of the genre.',
+          pairs: [
+            {
+              skill: 'Hunt',
+              description: 'Ice fishing',
+            },
+            {
+              description: 'Skiing; Ice skating; Deep see diving',
+              skill: 'Athletics',
+            },
+            { description: 'Bobsled; Astronaut navigation', skill: 'Driving' },
+            { skill: 'Geology', description: 'Volcanism; Mining the moon' },
+          ],
+        },
+        {
+          base: 'Body/2',
+          description:
+            "Hunt embodies hiking, climbing, jumping, and the ability to survive in a variety of environments. A hero can construct shelters in the wild. Additionally, the Hero can make or disarm snares and earthen pits with this skill area. Normal TN for a day's existence would be TN100, subject to Guide discretion. Rolls are made daily. TN50-Temporary lean-to shelter, TN75-Temporary ice shelter, TN100-Food and water for one person's existence in the wild, TN125-Food and water for two people existing in the wild, TN150-Food and water for eight people existing in the wild. Tracking prey depends on weather, terrain, mode of transport, age of tracks, and season with shifts begin at TN100. 3 shifts easier-Group(12+); Size7, 2 shifts easier-Group(6-12); Size5 to Size6, 1 shift easier-Group(3-6); Size3 to Size4, 1 shift harder-Rocky terrain; poor visibility; size-1 to size-2, 2 shifts harder-precipitation; Size-3 to Size-4, 3 shifts harder-Waterways; Size-5 or smaller. Difficulty in following tracks depends on environmental conditions. Wind, moisture, soil hardness, traffic, and plant growth all factor into determination of TN. For the sake of simplicity, the following chart describes modifiers for a temperate woodland. For example mud holds tracks longer and may warrant two adjustments; a day old track in mud is one shift easier. 3 shifts easier-Subjects in sight, 2 shifts easier-Subjects heard, 1 shift easier-Minutes old, no shift-Hours old, 1 shift harder-One day old, 2 shifts harder-Days old, 3 shifts harder-A week or more old.",
+          limit: 'Acclimatable',
+          name: 'Hunting/Tracking',
+          experts: {
+            style: ['fishing', 'trapping', 'weather'],
+            creature: [
+              'vampire',
+              'werewolf',
+              'human',
+              'whale',
+              'shrimp',
+              'deer',
+              'lions',
+            ],
+          },
+        },
+        {
+          base: 'Strength',
+          description:
+            'Mountaineering Caving includes speleology, squeezing, tunneling, climbing, and underground exploration. An individual with Mountaineering can squeeze through a space that fits their head (TN100)',
+          limit: 'Acclimatable',
+          name: 'Mountaineering/Caving',
+          experts: {
+            style: [
+              'climbing',
+              'navigation',
+              'spelunking',
+              'squeezing',
+              'tunneling',
+              'underground orientation',
+            ],
+          },
+        },
+        {
+          base: 'Body/2',
+          description:
+            'Travel is the ability to survive and flourish in various urban conditions, outside a normal place of residence. Heroes determine logical location of people, places, or items in a city setting. Normal TN for living off the street is TN100. Trailing is following in an urban setting. Trailing a crowd (TN100) does not require a paired skill, but trailing on a highway requires skill combinations (Drive TN125). Investigating a cold trail is possible with other skills (Police work TN150 or Criminology TN150). Downtrodden Heroes construct shelters in the city and know how to avoid local authorities, ordinances, and trouble. Every city will have its own rules and opportunities. TN100-Temporary cardboard quarters in alleyway, TN125-Temporary crate under stairs or overpass, TN150-Semi-permanent in sewers or abandoned dwellings.',
+          limit: 'Exclusive',
+          name: 'Travel',
+          experts: {
+            city: ['New York City', 'Centropolis'],
+          },
+        },
+      ],
+      fight: [
+        {
+          base: 'Varies',
+          description:
+            'Combat Combinations combines a non-combat skill with a combat skill. This skill removes the one-shift penalty incurred by skill combination rules. The lowest of all ranks is still used for the base roll',
+          limit: 'Universal',
+          name: 'Combat Combinations',
+        },
+        {
+          base: 'Body/2',
+          description:
+            'Combat Contagion represents the ability of a disease to infect another (TN100). It does not represent the strength of the disease. The disease must be sufficiently communicated to the recipient through proper exposure. The subject does not have a facing penalty',
+          limit: 'Universal',
+          name: 'Combat Contagion',
+        },
+        {
+          base: 'Dexterity',
+          description:
+            'Combat Energy Emanation directs energy emanating from a specific source. This source can be a mouth, a held hose, or in some cases a hand invoking a spell. Combat Energy Emanation can be used to launch ray spells at a two-shifts penalty (TN125)',
+          limit: 'Universal',
+          name: 'Combat Energy Emanation',
+        },
+        {
+          base: 'Body/2',
+          description:
+            'Combat Envenomation represents the ability of a poison to take effect (TN100). It does not represent the strength of the poison. The poison must be sufficiently communicated to the recipient through proper application, ingestion, or inhalation. The subject does not have a facing penalty',
+          limit: 'Universal',
+          name: 'Combat Envenomation',
+        },
+        {
+          base: 'Mind/2',
+          description:
+            'Combat Environmental Expertise is a combination skill of Combat Environmental Expertise and Extreme Environments, where all three skills have crested. This skill at rank 40 negates one penalty shift from fighting in adverse environments. The Hero chooses the environment. Example include: aerial, aquatic, cold, heat, weightless, etc',
+          limit: 'Acclimatable',
+          name: 'Combat Environmental Expertise (Environment)',
+        },
+        {
+          base: 'Body/2',
+          description:
+            'Combat Garrote represents use of garrotes. Examples across multiple genres include chain, net, noose, wire, whip, and laser wire. This skill does not provide the ability to strangle, trip, or grapple',
+          limit: 'Universal',
+          name: 'Combat Garrote',
+        },
+        {
+          base: 'Mind/2',
+          description:
+            'Combat General Bomb/Siege covers ranged attacks that launch damaging energy or objects at stationary target(s). Attacks with this skill, using a proper implement, are TN125. Range shifts may apply',
+          limit: 'Acclimatable',
+          name: 'Combat General Bomb/Siege',
+        },
+        {
+          // pg 30
         },
       ],
     },

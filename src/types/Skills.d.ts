@@ -1,5 +1,5 @@
 import { Skill } from '.'
-type Class = 'build' | 'art' | 'buy'
+type Class = 'build' | 'art' | 'buy' | 'camp' | 'fight'
 
 export interface Skills {
   id: number
