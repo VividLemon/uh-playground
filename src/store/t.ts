@@ -538,7 +538,677 @@ export const a: Array<Skills> = [
           name: 'Combat General Bomb/Siege',
         },
         {
-          // pg 30
+          base: 'Strength',
+          description:
+            'Combat General Melee focuses on the art and tactics of melee combat. Attacks with this skill are TN125. Any melee weapon can be used in this fashion. This allows improvisation of any object as a melee weapon including natural weapons. Combat General Melee can be used for melee touch spells (TN100) but does not cause additional damage from Strength',
+          limit: 'Universal',
+          name: 'Combat General Melee',
+        },
+        {
+          base: 'Dexterity',
+          description:
+            'Combat General Range focuses on the art and tactices of projectile combat. Attacks with this skill are TN125. A Hero with skill gains improvisation of any object as a thrown weapon. Combat General Range also gains proficiency in all projectile and grenade weapons. To be clear, self-projected weapons, siege machines, and mounted weapons are covered in other Combat General skills. Strength modifiers do not apply to damage. Combat General Range can be used to launch ray spells (TN100)',
+          limit: 'Universal',
+          name: 'Combat General Range',
+        },
+        {
+          base: 'Deduction',
+          description:
+            'Combat General Tactical permits attacks against targets seen directly and indirectly, using instrumentation and guidance systems. These self-propelled weapons include ICBMs, patriot missile systems, group-based PPCs, rail guns, grenade launchers, phalanx defense system, wire-guided missiles, etc. Attacks with this skill are TN125',
+          limit: 'Acclimatable',
+          name: 'Combat General Tactical',
+        },
+        {
+          base: 'Body/2',
+          description:
+            'Combat General Trample includes all trampling, whether with a car, elephant, or tank. Attacks with this skill are TN125',
+          limit: 'Acclimatable',
+          name: 'Combat General Trample',
+        },
+        {
+          base: 'Dexterity',
+          description:
+            'Combat General Vehicle uses mounted weapons designed to hit objects or other moving vehicles. Attacks with this skill are TN125',
+          limit: 'Acclimatable',
+          name: 'Combat General Vehicle',
+        },
+        {
+          base: 'Dexterity',
+          description:
+            'Combat Grenades covers the use of grenades icnluding: concussion grenades, vials of holy water, and dynamite. Weapons in this group are designed to active upon landing on or near the target. In addition to primary damage, splash damage affects each adjacent space. Spells use Combat Grenade to launch ray spells at two shifts penalty (TN125)',
+          limit: 'Universal',
+          name: 'Combat Grenades',
+        },
+        {
+          base: 'Strength',
+          description:
+            'Combat Natural Weapons includes use of natural weapons. Examples across multiple genres include claw, bite, tail, pseudopod, slam, tentacle, tail, wing buffet, and head-butt',
+          limit: 'Universal',
+          name: 'Combat Natural Weapons, weapon',
+        },
+        {
+          base: 'Strength',
+          description:
+            'Combat One Hand Blade covers use of one-handed blades. Examples across multiple genres include laser sword, whip with blades attached, stiletto, dagger, some swords, and axes',
+          limit: 'Universal',
+          name: 'Combat One Hand Blade',
+        },
+        {
+          base: 'Strength',
+          description:
+            'Combat One Hand Blunt/Pierce include use of one-handed blunt or piercing weapons. Examples across multiple genres include mace flail, short spear, shield, and sap',
+          limit: 'Universal',
+          name: 'Combat One Hand Blunt/Pierce',
+        },
+        {
+          base: 'Dexterity',
+          description:
+            'Combat One Hand Projectile covers use of one-handed projectile weapons, using a tool or device to propel a weapon. Examples across multiple genres include pistol, hand crossbow, small blowguns, and laser blaster',
+          limit: 'Universal',
+          name: 'Combat One Hand Projectile',
+        },
+        {
+          base: 'Strength',
+          description:
+            'Combat One Hand Thrown includes use of one-handed thrown weapons. Examples across multiple genres include dagger, knife, boomerang, tomahawk, tracking devices, rocks, and shuriken. Weapons in this group are designed to injure the target through penetration or impact. Attack rates are under the thrown category, with some exceptions. For example shuriken use the rapid missile and rocks use melee combat tables',
+          limit: 'Universal',
+          name: 'Combat One Hand Thrown',
+        },
+        {
+          base: 'Strength',
+          description:
+            'Combat Pole Arms comprises use of pole arms. Examples across multiple genres include gaff, halberd, lance, poleaxe, trident and others. Weapons in this category need two hands without the use of an apparatus or holster as with a lance. These weapons attack and threaten one space beyond normal melee, including the diagonal. Spaces adjacent to the wielder have penalties, explained next. The wielder may chose the weapon to attack adjacent squares at one negative shift. Pole arms suffer a two-shift penalty attacking opponents in their occupied space. Negative shifts apply to disarming, weapon damage, and similar attacks. Leaving adjacent squares provokes parting shots at one negative shift. Opponents charging through threatened spaces incur a parting shot; however, moving through these spaces cautiously negates the parting shot.',
+          limit: 'Universal',
+          name: 'Combat Pole Arms',
+        },
+        {
+          base: 'Strength',
+          description:
+            'Combat Two Hand Blade includes use of two-handed blades. Examples across multiple genres include double bladed laser sword, bayonet, and claymores',
+          limit: 'Universal',
+          name: 'Combat Two Hand Blade',
+        },
+        {
+          base: 'Strength',
+          description:
+            'Combat Two Hand Blunt/Pierce represents knowledge and use of two-handed blunt weapons. Examples across multiple genres include heavy flail, spear, staff, and large club.',
+          limit: 'Universal',
+          name: 'Combat Two Hand Blunt/Pierce',
+        },
+        {
+          base: 'Dexterity',
+          description:
+            "Combat Two Hand Projectile represents use of two-handed projectile weapons, using a tool or device to propel a weapon. Examples across multiple genres include most bows, laser rifle, assault rifle, sniper's rifle, machine gun, and larger blowguns",
+          limit: 'Universal',
+          name: 'Combat Two Hand Projectile',
+        },
+        {
+          base: 'Strength',
+          description:
+            'Combat Two Hand Thrown covers use of two-handed thrown weapons. Examples across multiple genres include dwarf, caber, and boulders. Weapons in this group are designed to injure the target through penetration or impact. Attack rates are under the thrown category, with some exceptions. Some are limited to one object per round',
+          limit: 'Universal',
+          name: 'Combat Two Hand Thrown',
+        },
+        {
+          base: 'Body/2',
+          description:
+            'Combat Unarmed is based on various forms of unarmed combat, including wrestling, boxing, street-fighting, and judo. Various techniques may change for these styles, and includes use of body parts not normally designed for combat: head-butting, punching, kicking, etc. The combatant may choose to do regular or non-lethal damage. Brass knuckles is an example of an available weapon. Expertise in Combat Unarmed does not specialize in a particular form of karate or the like. Instead, the core system allows expertise by specifying a specific body part such as hand, leg, body, or head. The Hero should be mindful in tehir selection if they expand with tricks such as sunder, trip, push, or knockout.',
+          limit: 'Universal',
+          name: 'Combat Unarmed',
+        },
+        {
+          base: 'Varies',
+          description:
+            'Combat Weapon Expertise teaches advantages for one specific weapon type providing bonus shifts. The first bonus is received at rank 20 as a shift with weapon use. At rank 40, this increases by partial shift. At rank 60, the expertise bonus becomes two shifts. These skills are subject to the skill combination rules. The Hero may take this skill multiple times in different weapons. When using a combination of skills with skill expertise, the Hero must use the lowest rank',
+          limit: 'Universal',
+          name: 'Combat Weapon Expertise, specific weapon',
+        },
+        {
+          base: 'Varies',
+          description:
+            "Combat Weapon Mastery represents pinnacle use of a specific weapon and it's detailed in genre handbooks for specific genres that allow it's use. This skill provides tricks at rank 20, 40, and 60 without using the normal skill combination, prerequisites skills, or skill chain rules. Acquired tricks are gained from trainers and are genre exclusive. Alternatively, expertise may substitute for the first acquired trick. When this skill is used in conjuction with any other skill, skill combination rules apply similarly as expertise. Weapon access has the same restrictions as CWEXP",
+          limit: 'Exclusive',
+          name: 'Combat Weapon Mastery, weapon',
+        },
+        {
+          base: 'Varies',
+          description:
+            "Combat Weapon Tricks enables one trick to be learned with one specific weapon type, not with a weapon class. It can be learned for more than one weapon, each with it's separate rank. This skill is subject to skil combination rules. Example tricks that can be learned in this system are disarm, sunder (prerequisite of disarm), trip, grapple (prerequisite of trip), shove, overrun (prerequisite of shove). Use in an atypical manner (throwing a bastard sword, triggering a machine gun and having it go off while it falls down the stairs), or drawing the weapon quickly",
+          limit: 'Universal',
+          name: 'Combat Weapon Tricks, weapon',
+        },
+      ],
+      heal: [
+        {
+          base: 'Mind/2',
+          description:
+            'Androtics allows Heroes to identify kind, type, and purpose of androids (completely artificial biology, in contrast to cyborgs, which are part biological and part robotic). With Skill Combination, this allows reprogramming (Language and Computer Science) and construction/repair (Construction or Mechanics). At very high ranks, design of new android prototypes is possible',
+          limit: 'Acclimatable',
+          name: 'Androtics',
+          experts: {
+            systems: [
+              'eyes',
+              'ears',
+              'heart',
+              'arms',
+              'legs',
+              'skin',
+              'spinal chord',
+            ],
+            creature: ['A.D.A.M.14', 'Oreman One', 'R.O.V.E.R.', 'the dog'],
+          },
+        },
+        {
+          base: 'Deduction',
+          description:
+            'Cybernetics encompasses creation, maintenance, and repair of cybernetic organisms (cyborgs), and living creatures with implants, with a specific genres. Some genres may create amalgamation of magic technology, or other things (such as biological parts) to create merged organisms',
+          limit: 'Exclusive',
+          name: 'Cybernetics',
+          experts: {
+            system: [
+              'eyes',
+              'ears',
+              'heart',
+              'arms',
+              'legs',
+              'skin',
+              'spinal chord',
+            ],
+          },
+        },
+        {
+          base: 'Body/2',
+          description:
+            'First Aid relieves Body stress from trauma. This may include resuscitation, triage of injured patients, or removal of foreign bodies. Use of this skill is specific to race, and shift(s) apply as per the Guide. Functions include stabilizing dying characters in any of Mind/Body/Soul and assistance in recovering Resource while resting (TN50, subject to toher modifiers per Guide discretion). Stabiliziation can be done only once per character per five minutes without special equipment (TN100 in combat, TN50 if not). Characters can care for on other person per 10 rank. Heroes apply First Aid to general populations with implementation of correct hygiene procedure. Application does not cure disease, however, it may prevent the onset and severity of infections. First Aid treats symptoms; it does not cure diseases. TN25-Heimlich maneuver; tourniquet, TN50-Cauterize wounds; bind wounds; stabilization, TN75-Remove barbs and shrapnel; remove giant leech, TN100-Slow poison; field tracheostomy, TN125-Remove tape worms, TN150-Remove hook worms from muscle',
+          limit: 'Universal',
+          name: 'First Aid, species',
+          experts: {
+            style: [
+              'antitoxin',
+              'barb removal',
+              'binding',
+              'hygiene',
+              'triage',
+              'parasites',
+            ],
+          },
+        },
+        {
+          base: 'Mind/2',
+          description:
+            'Medicine is the academic anatomy, biochemistry, and medical care of a single sentient race. This skill enables acute repair and long-term care of chronic ailments, as well as acute severe infections. This skill differs from First Aid as it is used for problems like diseases, surgery, and medications. Medicine can function as First Aid with an additional two-shift penalty. Medicine can identify diseases (TN150). A proper lab, family history, examination, and x-rays each add a shift. Rarity and similarity to other diseases may add negative shifts. Magical diseases are two-shifts higher to detect without obvious symptoms. This producedure-based skill cures damaged Body at a rate of 1d6/10 Rank and can only be used once per day per patient such use also removes all non-lethal damage. Target numbers are TN100, TN50 using the appropriate equipment and environment. The appropriate environment to practice Medicine is a hospital. Practice restores Dexterity and Strength damage one point per hour up to rank modifier. Patients can sustain only one session per day. Target number is TN150, TN100 using the appropriate equipment and environment',
+          limit: 'Acclimatable',
+          name: 'Medicine, species',
+          experts: {
+            disease: ['cancer'],
+            organ: [
+              'eyes',
+              'ears',
+              'heart',
+              'arms',
+              'legs',
+              'skin',
+              'spinal chord',
+            ],
+          },
+        },
+        {
+          name: 'Meditation/Therapy, species',
+          base: 'Soul/2',
+          description:
+            'Meditation Therapy is long-term spiritual care of chronic spiritual ailments and acute spiritual diseases. This procedure-based skill cures damaged Soul at a rate of 1d6/10 Rank and can only be used once per day per patient; such use also removes all non-lethal damage (TN100, TN50 using the appropriate equipment and environment conducive to calm relaxation.). Therapy with this skill restores Faith and Imagination damage one point per hour up to rank modifier. Patients can sustain only one session per day. Target number is TN150, TN100 using appropriate equipment and environment',
+          limit: 'Acclimatable',
+          experts: {
+            setting: ['grove', 'monastery', 'office', 'temple', 'waterfall'],
+          },
+        },
+        {
+          base: 'Mind/2',
+          description:
+            'Psychology is long term mental care of chronic mental ailments and acute severe mental illnesses/insanities. This procedure-based skill cures damaged Mind at a rate of 1d6/10 Rank and can only be used once per day per patient; such use also removes all non-lethal damage (TN100, TN50 using the appropriate equipment and environment conducive to uninterrupted conversation.) Other modifiers apply according to Guide discretion. Therapy with this skill restores Deduction and Memory damage one point per hour up to rank modifier. Patients can sustain only one session per day (TN150, TN100 using the appropriate equipment and environment.)',
+          limit: 'Acclimatable',
+          name: 'Psychology',
+          experts: {
+            ailment: ['bipolar', 'schizophrenia', 'depression', 'autism'],
+          },
+        },
+        {
+          base: 'Faith',
+          description:
+            'Spiritual Medicine integrates a conceptualization of Mind, Body, and Soul as one entity to heal the Hero. By tapping into all resource energies, a practitioner may heal Mind/Body/Soul. Various examples include chiropractic, hypnosis, reflexology, macrobiotics, energy medicine, phrenology, sweat lodges, biorhythms, joss/incense, paperburning, acupuncture, chakra hot stones, homeopathy, cupping, and coining. Spiritual Medicine heals appropriate Resource at a rank of 1d6/10 Rank per patient to heal all three Resources once per day as determined by the recipient; such use also removes all non-lethal damage (TN150). The best use of this skill controls the senses through appropriate equipment and environment (TN100). Examples of control are trickling water, therapeutic cushions, specialized oils, applied medicinal therapy, and calming music. Other modifiers apply according to Guide discretion',
+          limit: 'Exclusive',
+          name: 'Spiritual Therapy, species',
+          experts: {
+            setting: ['Temple of Chi', 'Ironwood Serenity Grove'],
+            mind: ['only'],
+            body: ['only'],
+            soul: ['only'],
+          },
+        },
+        {
+          base: 'All 4 Resources/4',
+          description:
+            'Yoga includes boody manipulation and mental meditation to enable a higher state of relaxation and awareness. Daily practice yields bonus recovery of resources equal to rank dividing amongs Mind/Body/Soul. Different genres may also allow additional abilities/powers. This procedure-based skill cures damaged Mind/Body/Soul at a rate of 1d6/10 Rank and can only be used once per day; such use also removes all non-lethal damage. It cannot be used on others without skill combination or skill tricks. Target numbers are TN100, TN50 using the appropriate equipment and environment conducive to calm relaxation. Other modifiers apply according to Guide discretion. If any ability score is at zero, Yoga cannot be performed',
+          limit: 'Acclimatable',
+          name: 'Transcendence/Yoga',
+        },
+        {
+          base: 'Memory',
+          description:
+            'Veterinary Sciences include academic anatomy, biochemistry, and medical care of non-sentient creatures within a genre. Practitioners provide acute repair and long-term care of chronic ailments, as well as acute severe infections. This procedure-based skill cures damaged Mind, Body, or Soul of a non-sentient creature at a rate of 1d6/10 Rank and can only be used once per day per patient; such use removes all non-lethal damage. Target numbers are TN100, TN50 using the appropriate equipment and environment. Other modifiers apply according to Guide discretion',
+          limit: 'Exclusive',
+          name: 'Veterinary Sciences',
+          experts: {
+            classes: [
+              'canines',
+              'felines',
+              'raptors',
+              'owls',
+              'sharks',
+              'tropical fish',
+              'whales',
+              'bovines',
+            ],
+          },
+        },
+      ],
+      learn: [
+        {
+          base: 'Memory',
+          description:
+            'Antiquities concerns knowledge of well-known, valuable items. It allows identification, history, and legends of significance that unlock secrets',
+          limit: 'Exclusive',
+          name: 'Antiquities',
+          experts: {
+            type: ['rings', 'paintings', 'rapiers', 'cars'],
+            nationality: ['Nation'],
+          },
+        },
+        {
+          base: 'Mind/2',
+          description:
+            'Education teaches and develops skills and uses HePs during training or tutoring sessions. A tutoring session of three months can be conducted for one student per ten rank (TN50). Classes of one student per rank could also be taught (TN100). Other bonus shifts certainly apply: 2 shifts bonus-Exact coursework has been taught previously, 1 shift bonus-Institute of learning; use of technology; access to reference material; team taught, 1 shift penalty-Frequent distractions; lack of materials, 2 shift penalty-Obstinate students; subject is beyond learner. For every three months of tutoring, the teacher gains one point in the skill taught, limited to rank in Education (TN100). The point may be applied to Education instead. Teaching can be used in conjunction with Employability to gain Capital. When tutoring a skill, the student is limited to lesser of the two ranks. Primary educators may deliver instruction up to Rank 10 in any skill deemed necessary by more than half the population of their genre of origin',
+          limit: 'Universal',
+          name: 'Education',
+          experts: {
+            style: ['learning disabilities', 'emotional disabilities'],
+            skill: ['math', 'engineering', 'psychology'],
+          },
+        },
+        {
+          base: 'Mind/2',
+          description:
+            'Games, Mind includes games based on deduction and memory. Examples of this include chess, tabletop games, parlor games, and computer games. Guides are encouraged to use skill combination rules when plausible. For example, billiards, darts, and croquette could use Games, Mind and Physics. In a stretch, Mind Perception and Body Dexterity could be used with additional shifts. Standard skill combination rules apply',
+          limit: 'Exclusive',
+          name: 'Games, Mind',
+          experts: {
+            game: ['chess', 'Universal Horizons'],
+          },
+        },
+        {
+          base: 'Memory',
+          description:
+            'Geography/Mapping includes cartography, topography, and location famous geographical features. Navigation, planning, and plotting courses utilize this skill',
+          limit: 'Exclusive',
+          name: 'Geography/Mapping',
+          experts: {
+            region: ['Genre'],
+            style: [
+              'trip planning',
+              'obscure locales',
+              'cartography',
+              'topography',
+            ],
+          },
+        },
+        {
+          base: 'Memory',
+          description:
+            'History concerns important past events and allows construction of timelines that references noteworthy occasions, significant individuals, and places. Knowledge of history depends on references such as computers, libraries, or data implants. Historians of specific skills used skill combination rules. Examples include Math, Artistry, and Medicine. An expert may consider creating a combination skill',
+          limit: 'Exclusive',
+          name: 'History',
+          experts: {
+            nationality: ['Nation'],
+            period: ['stone age', 'renaisssance', "60's"],
+          },
+        },
+        {
+          base: 'Deduction',
+          description:
+            'Library Science/Information Networks efficiently and effectively retrieves and categorizes information. Discovering obscure facts within catacombs of data depends on the organization, classification, and retrieval methods',
+          limit: 'Acclimatable',
+          name: 'Library Science/Information Networks',
+          experts: {
+            database: [
+              'NYC Public Library',
+              'Library of Congress',
+              'Encyclopedia',
+              'CD Rom',
+            ],
+          },
+        },
+        {
+          base: 'Mind/2',
+          description:
+            'Military Science covers strategy, tactics, training, deployment, logistics and execution of military battles and campaigns',
+          limit: 'Acclimatable',
+          name: 'Military Science',
+          experts: {
+            unit: [
+              'militia',
+              'snipers',
+              'phalanx',
+              'cavalry type',
+              'infantry type',
+              'tanks',
+              'figher jets',
+            ],
+          },
+        },
+        {
+          base: 'Soul/2',
+          description:
+            'Occult Sciences provides information and insight into creatures and castings of magical nature. The user must have experienced or knowingly interacted with the spell in question. When analyzing creatures, Occult Sciences identifies ubiquitous abilities of the target creature. The Guide controls how often information may be disseminated. Additional information about a spell is gathered from higher TN rolls, TN50-Casting area, TN75-Casting level, TN100-Casting name; creature has magical ability, TN125-Level of magical ability of creature, TN150-One specific magical ability of creature, TN175-d3 additonal magical abilities of creature',
+          limit: 'Exclusive',
+          name: 'Occult Sciences',
+          experts: {
+            style: ['Creature', 'Casting Skill'],
+          },
+        },
+      ],
+      life: [
+        {
+          base: 'Imagination',
+          description:
+            "Animal Handling calms and trains normal non-sentient non-evolved animals. Animal Handling calms animals; the disposition of an animal depends on its current situation, demeanor, and status. For wild animals, the attitude change will last one day, at most. If befriending wild animals, Soul Influence is used in skill combination with Animal Handling. This process takes a day. Difficult breads, mishandled, or poor disposition may take many days or weeks. Teaching commands to befriended animals gains a one-shift bonus. Once an animal is befriended, teh animal is under-command and may perform commands. Commands use Animal Handling directly. Without training, a befriended animal may: Carry-Permits tethered transportation of objects, Feed-Directs the timing and object to be consumed, Defend owner*-Animal attacks threaning foes, Untrained commands may be attempted at two shifts harder. Any Hero may have one befriended animal. More animals may be attracted using Leadership. A befriended animal may be trained in five additional commands, plus one per five of the animal's Memory. The time needed to train a trick is one week per 50TN of difficulty, after modifiers. Animals are limited to a certain number of tricks. Once that limit is reached, a current trick must be untaught (TN150) before another one can replace it.",
+          limit: 'Exclusive',
+          name: 'Animal Handling',
+          experts: {
+            style: ['Creature', 'Command'],
+          },
+        },
+        {
+          base: 'Memory',
+          description:
+            'Biology encompasses general knowledge, identity, and functions of living systems. This skill provides specific information on living organisms not convered under Zoology and Botany, such as protozoans, diatoms, or fungi (TN50). Biology can mimic Botany, Ecology, or Zoology at one shift penalty for identification',
+          limit: 'Exclusive',
+          name: 'Biology',
+          experts: {
+            creature: [
+              'algae',
+              'bacteria',
+              'diatoms',
+              'fungi',
+              'jellies',
+              'prions',
+              'protozoans',
+              'slimes',
+              'viruses',
+            ],
+          },
+        },
+        {
+          base: 'Memory',
+          description:
+            'Botanty involves knowledge about plant life. The individual can discover use of plants, including edibility, curative and harmful properties, and sentience',
+          limit: 'Exclusive',
+          name: 'Botany',
+          experts: {
+            style: ['botinary', 'forestry', 'herbology', 'pathology', 'seeds'],
+            species: ['angiosperms', 'conifers', 'ferns', 'mosses'],
+          },
+        },
+        {
+          base: 'Memory',
+          description:
+            'Ecology embraces environmental systems, interactions, influences, and various environmental issues. Ecologists analyze creatures and how their populations affect biomes. Use includes discovering oddities in nature, determining the cause, and recomending the remedy. TNs depend on setting, genre of origin, and other variables as per the Guide',
+          limit: 'Acclimatable',
+          name: 'Ecology',
+          experts: {
+            style: ['biome', 'elemental creature type'],
+          },
+        },
+        {
+          base: 'Memory',
+          description:
+            'Genetics incorporates knowledge of genes, genetic design, and genetic manipulation. Genetic engineering is skill combination of Genetics and Engineering',
+          limit: 'Exclusive',
+          name: 'Genetics',
+          experts: {
+            species: ['Species'],
+          },
+        },
+        {
+          base: 'Memory',
+          description:
+            "Xenomorphology provides knowledge of one alien species, with general anatomy, phsyiology, behaviors, vulnerabilites, and habitats. Through skill combination Medicine, Psychology, and other species specific skills can be applied to the alien species. Xenomorphology can be learned for more that one species, each with it's separate Rank. In some worlds, Xenomorphology is a single skill area covering all alien life, possibly considered a charlatan study if the general public does not recognize the existence of aliens",
+          limit: 'Exclusive',
+          name: 'Xenomorphology',
+          experts: {
+            species: ['Species'],
+          },
+        },
+        {
+          base: 'Memory',
+          description:
+            'Zoology embodies knowledge of non-sentient species, the natures of many different types of creatures, their habits and habitats. Successful rolls can detect weaknesses, behaviors, anatomy, value of components, and physiology',
+          limit: 'Exclusive',
+          name: 'Zoology',
+          experts: {
+            species: [
+              'fish',
+              'mammals',
+              'insects',
+              'worms',
+              'amphibians',
+              'avians',
+              'reptiles',
+            ],
+            style: ['pathology'],
+          },
+        },
+      ],
+      magic: [
+        {
+          base: 'Memory',
+          description:
+            'Alchemy allows creation of magical concoctions, potions, and elixers with underlying principles based on the theory of five elements. Alchemy of Araqunidia™ is explained in the Araqunidia™ Genre Handbook and differs greatly from traditional alchemy',
+          limit: 'Exclusive',
+          name: 'Alchemy',
+        },
+        {
+          base: 'Soul/2',
+          description:
+            'Astrology utilizes castings of a celestial nature, with horoscopes, celestial constellations, and conjunctions',
+          limit: 'Exclusive',
+          name: 'Astrology',
+        },
+        {
+          base: 'Wealth/2',
+          description:
+            'Banking exists in genres that utilize currency. This skill includes familliarity with practices of investment, loands, and monetary exchange with castings',
+          limit: 'Exclusive',
+          name: 'Banking',
+        },
+        {
+          base: 'All 4 Resources/4',
+          description:
+            'Binding comprises enchantment of individuals and items with magical effects, both temporary and permanent',
+          limit: 'Exclusive',
+          name: 'Binding',
+        },
+        {
+          base: 'Faith',
+          description:
+            'Exorcism uses cleansing rituals to restore Heroes and victims to their natural state',
+          limit: 'Exclusive',
+          name: 'Exorcism',
+        },
+        {
+          base: 'Soul/2',
+          description:
+            'Foretelling reveals information about individuals, including their background, attitudes, and future. The foreteller is "certain" readings are correct , but often does not provide 100% accurate information. Charlatans color the repuation of this skill by falsely pretending to read the future of clients, patrons, and passersby, using Thespianism, Legerdemain, Deception, and Deduction',
+          limit: 'Exclusive',
+          name: 'Foretelling',
+        },
+        {
+          base: 'Soul/2',
+          description: 'Kinesis allows casting of magic by motion and movement',
+          limit: 'Exclusive',
+          name: 'Kinesis',
+        },
+        {
+          base: 'All 4 Resources/4',
+          description:
+            'Melodic Magic uses rhythm, chanting, and music to cast spells',
+          limit: 'Exclusive',
+          name: 'Melodic Magic',
+        },
+        {
+          base: 'Body/2',
+          description:
+            'Molding/Grafting allows the animation, creation, and grafting of parts of golems and prosthetics in a magical fashion',
+          limit: 'Exclusive',
+          name: 'Molding/Grafting',
+        },
+        {
+          base: 'Faith',
+          description:
+            'Necromancy deals with dead creatures and their parts. This skill manipulates the physical forms, not the soul, of the creatures so enchanted',
+          limit: 'Exclusive',
+          name: 'Necromancy',
+        },
+        {
+          base: 'Mind/2',
+          description:
+            'Numerology transforms energy into mass by creating items, folding dimensions, and transforming subjects',
+          limit: 'Exclusive',
+          name: 'Numerology',
+        },
+        {
+          base: 'All 4 Resources/4',
+          description:
+            'Runecraft enchants areas with magical glyphs through drawings, paintings, and other etchings',
+          limit: 'Exclusive',
+          name: 'Runecraft',
+        },
+        {
+          base: 'Soul/2',
+          description:
+            'Shamanism encompasses faith-based castings of utilitarian nature to protect tribal societies',
+          limit: 'Exclusive',
+          name: 'Shamanism',
+        },
+        {
+          base: 'Imagination',
+          description:
+            'Spiritology is the study of spirits, the Spirit World, and its native inhabitants. Castings are used to influence, bind, consult, and summon spirits',
+          limit: 'Exclusive',
+          name: 'Spiritology',
+        },
+        {
+          base: 'Faith',
+          description: 'Summoning can summon items, auras, and creatures',
+          limit: 'Exclusive',
+          name: 'Summoning',
+        },
+        {
+          base: 'Faith',
+          description:
+            'Theology possesses a belief system with associated castings',
+          limit: 'Exclusive',
+          name: 'Theology',
+        },
+        {
+          base: 'Soul/2',
+          description:
+            'Vision reveals information about specific places and things',
+          limit: 'Exclusive',
+          name: 'Vision',
+        },
+        {
+          base: 'Imagination',
+          description:
+            "Voodoo comprises castings that influence another's beliefs and fears through illusions",
+          limit: 'Exclusive',
+          name: 'Voodoo',
+        },
+        {
+          base: 'Mind/2',
+          description:
+            'Warding defends the caster and their constituency. Castings deal with prevention, exclusion, and repulsion of ill effects',
+          limit: 'Exclusive',
+          name: 'Warding',
+        },
+        {
+          base: 'Imagination',
+          description: 'Wicca charms and manipulation of others',
+          limit: 'Exclusive',
+          name: 'Wicca',
+        },
+        {
+          base: 'Memory',
+          description:
+            'Wizardry is the academic, scholasitc, and taught method of magic emulation and manipulation',
+          limit: 'Exclusive',
+          name: 'Wizardry',
+        },
+      ],
+      move: [
+        {
+          base: 'Dexterity',
+          description:
+            'Driving enables use of a vehicle in two dimensions, on surfaces such as land or water',
+          limit: 'Acclimatable',
+          name: 'Driving',
+          experts: {
+            vehicle: ["Abram's Tank", 'Iowa class battleship', 'Mustange'],
+          },
+        },
+        {
+          base: 'Wealth/2',
+          description:
+            'Movement Expertise modifies a specific aspect of a movement that cannot be defined in a skill. Movement Expertise is offered and limited in genres',
+          limit: 'Any',
+          name: 'Movement Expertise',
+        },
+        {
+          base: 'Body/2',
+          description:
+            'Movement Tricks allows tricks with certain type of movement. It may be taken multiple times for different movements or tricks. This skill can be used to gain a movement speed provided means or ability. Another example of Movement Tricks is to increase movement speed of an existing movement type for specific situations. Movement Tricks is offered and limited in specific genres',
+          limit: 'Universal',
+          name: 'Movement Tricks, movement type',
+        },
+        {
+          base: 'Faith',
+          description:
+            "Multiversal Portals incorporates a basic understanding of the current genre's attached planes, portals, and general cosmology. This skill provides limited information of portal access",
+          limit: 'Exclusive',
+          name: 'Multiversal Portals',
+          experts: {
+            style: ['Specific Portal', 'Specific Plane'],
+          },
+        },
+        {
+          base: 'Dexterity',
+          description:
+            'Piloting enables use of a vehicle in three dimensions, including air, vacuum, or water',
+          limit: 'Acclimatable',
+          name: 'Piloting',
+          experts: {
+            vehicle: ['F-18', 'Cessna 150', 'Dallas class sub.'],
+          },
+        },
+        {
+          base: 'Dexterity',
+          description:
+            'Riding allows movement commands through gestures, vocalizations, or other means. The mount must have Deduction and the Hero is considered a passenger, thus does not need driving or piloting. Animal mounts require training with Animal Handling. Genre handbooks supersede these rules',
+          limit: 'Exclusive',
+          name: 'Riding',
+          experts: {
+            style: ['combat', 'racing', 'teamstering'],
+            mount: ['Bessie', 'SS Moocher'],
+          },
         },
       ],
     },
