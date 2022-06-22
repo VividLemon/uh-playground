@@ -10,6 +10,10 @@ type Class =
   | 'life'
   | 'magic'
   | 'move'
+  | 'people'
+  | 'powers'
+  | 'science'
+  | 'sneak'
 
 export interface Skills {
   id: number

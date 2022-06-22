@@ -1169,7 +1169,7 @@ export const a: Array<Skills> = [
           base: 'Wealth/2',
           description:
             'Movement Expertise modifies a specific aspect of a movement that cannot be defined in a skill. Movement Expertise is offered and limited in genres',
-          limit: 'Any',
+          limit: 'Universal',
           name: 'Movement Expertise',
         },
         {
@@ -1208,6 +1208,375 @@ export const a: Array<Skills> = [
           experts: {
             style: ['combat', 'racing', 'teamstering'],
             mount: ['Bessie', 'SS Moocher'],
+          },
+        },
+      ],
+      people: [
+        {
+          base: 'Memory',
+          description:
+            'Anthropology encompasses general and specific information regarding cultural, social, and physical anthropology. Skill use includes determination of culture, era, and development of prior civilizations using artifacts and ruins',
+          limit: 'Exclusive',
+          name: 'Anthropology',
+          experts: {
+            nationality: ['Nation', 'Culture'],
+          },
+        },
+        {
+          base: 'Memory',
+          description:
+            'Biography covers life histories and lineage of families and individuals, approximate Capital score, and trace family history. Access to research material, literature, and connections with time greatly enhance the results',
+          limit: 'Exclusive',
+          name: 'Biography/Genealogy',
+          experts: {
+            nationality: ['Nation'],
+          },
+        },
+        {
+          base: 'Deduction',
+          description:
+            "Criminology covers intricacies, motivation, and patterns of behaviors of villains to predict potential future behaviors, plots and clues about crimes. Skill use may discover and interpret anomalies (clues) in a criminal setting. Guides assign situational modifiers based on how clues are connected and how prominent the media has made the crime. The criminal's motive affects the outcome dependent on their predictability, connectivity to society, and passion to the crime. Lastly, investigators must gather and have the appropriate skills to interpret the evidence. A Hero can narrow as long list of possibilies to two to four alternatives. Crime scenes vary in interpretation from where the murder was committed, how bodies or evidence were transported, where evidence is disposed, and where crimes are conceived. Plots complexity can be one scene, one mod, one adventure, or whole campaign. TN50-Identifies crime scene, TN75-Identifies object of crime; list of possible plots, TN100 Narrows background of criminal; leads to other crime scenes; detects planted or tampered evidence, TN125-Narrows motives; possible locales of criminal; narrows possible plots, TN150-Predicts locale of crime scene; identifies skills of criminal; identifies profession of criminal; identifies primary crime scene, TN175-Locale visited by criminal (past or present); identifies false plot, TN200-Identifies criminal, TN225-Identifies master plot. 2 shift bonus-One-week investigation; visual recording or witnessed crime, 1 shift bonus-One-day investigation; detailed record with all clues recovered and preserved; fresh scene or first to arrive, no bonus-One-hour investigation; most clues recovered and preserved; sealed crime scene, 1 shift penalty-ten-minute investigation; few clues recovered; scene partially investigated, 2 shift penalty-One-minute investigation; no clues recovered; scene compromised with heavy traffic",
+          limit: 'Universal',
+          name: 'Criminology',
+          experts: {
+            locale: ['Bronx', 'Nottingham forest'],
+            type: ['domestics', 'fraud', 'murder', 'theft', 'vice'],
+          },
+        },
+        {
+          base: 'Deduction',
+          description:
+            'Culture embodies knowledge of customs and attitudes of a culture and its people including cultural movements, sub-cultures, and traditional attitudes',
+          limit: 'Exclusive',
+          name: 'Culture/Sociology',
+          experts: {
+            nationality: ['Nation'],
+          },
+        },
+        {
+          base: 'Mind/2',
+          description:
+            'Domestics comprises the knowledge of personal services including grooming, barbering, coiffure, massage, cosmetic application, and other similar topics. Dentistry uses skill combination with Medicine',
+          limit: 'Acclimatable',
+          name: 'Domestics',
+          experts: {
+            nationality: ['Nation'],
+            service: [
+              'bathing',
+              'barbering',
+              'coiffure',
+              'cosmetics',
+              'household management',
+              'massage',
+            ],
+          },
+        },
+        {
+          base: 'Body/2',
+          description:
+            'Handiworks crafts and designs simple articles and performs services from commonly found materials. It mimics of a variety of skills at one-shift penalty including Domestics, Masonry, Farming, Geology, Hunting, Leatherwork, Construction, and Textiles',
+          limit: 'Acclimatable',
+          name: 'Handiworks',
+        },
+        {
+          base: 'Soul/2',
+          description:
+            'Games, Soul involves games using spiritual forces, posing moral dilemmas, and otherwise referencing occult and paranormal powers. As such, they are culture-based and laden with hidden meanings and truisms',
+          limit: 'Exclusive',
+          name: 'Games, Soul',
+          experts: {
+            game: ['Game'],
+          },
+        },
+        {
+          base: 'Mind/2',
+          description:
+            'Laws grant knowledge of laws covering civil, criminal, government and tax issues',
+          limit: 'Exclusive',
+          name: 'Law',
+          experts: {
+            type: ['civil', 'criminal', 'contract', 'tax'],
+          },
+        },
+        {
+          base: 'Faith',
+          description:
+            'Leadership is the ability to command other sentient beings. With this skill, Heroes direct people in emergency situations, gain followers, and organize others. Leaders slowly acquire followers over time and extensive game play. Leaders acquire charges based on military rank or business organizations. Rolls are necessary for tests of loyalty, morale, and rallying subjects. TNs based on overall attitude: TN50-Revered, honored, TN75-Zealous, devoted, TN100-Sympathetic, considerate, TN125-impartial, apathetic, TN150-Antagonistic, annoyed, TN175-Offensive, spiteful, TN200-Hateful, abhorred. 2 bonus shift-Loc 1 week, elites, rewards, 1 bonus shift-LoC 1 day, regulars, paid, no bonus-LoC 1 hour, enlisted, no pay, 1 penalty shift-LoC 10 min, conscripts, indentured, 2 penalty shift-LoC 1 min, commoners, taxes, combat, 3 penalty shift-LoC 1 round, slaves. LoC -- Length of command is the time the Hero has been instructing the crowd, troops, or followers. Heroes gain sidekicks with expertise in this skill after negotiating other costs with Guides. The sidekick is not gained until rank 20 is reached. Sidekicks may be human or animal. TN50 is the base roll for commanding follwers to perform dangerous, risky, or selfless actions. The following modifiers may assist Guides in their final determination: 2 bonus shift-Gifts above share*; exemplary leader; returned follower from death; LoC one year, 1 bonus shift-Full share of treasure*; benevolent leader; risks life for follower; other sidekicks present; LoC one month, no bonus-Partial share of treasure*; kind leader; hoenst, 1 penalty shift-No share*; callous leader; breaks oath; leader is incapacitated, 2 penalty shifts-Uncompensated losses; cruel leader; defiller; combat, 3 penalty shifts-Ruthless leader; torture or killed followers. *Animals use special feed and treats instead of shares',
+          limit: 'Universal',
+          name: 'Leadership',
+          experts: { rally: ['Military Type'], person: ['Specific Follower'] },
+        },
+        {
+          base: 'Faith',
+          description:
+            'Pantheology includes understanding of common religions of the genre. Study in this skill reveals factions, cults, and schisms (TN150). Expertise is not allowed; it is Religion',
+          limit: 'Exclusive',
+          name: 'Pantheology',
+        },
+        {
+          base: 'Faith',
+          description:
+            'Philosophy is the study of existence, ethics, reason, teh mind and soul based upon great icons of past and present. This skill enables resistance of Influence',
+          limit: 'Exclusive',
+          name: 'Philosophy',
+          experts: {
+            icon: ['Freud', 'Aristotle', 'Sun-Tsu'],
+          },
+        },
+        {
+          base: 'Body/2',
+          limit: 'Exclusive',
+          name: 'Police Work',
+          description:
+            'Police Work enforces laws of that society through investigation, interrogation, and evidence gathering',
+          experts: {
+            region: ['Region'],
+          },
+        },
+        {
+          base: 'Mind/2',
+          description:
+            'Political Science covers structures, responsibilities, and operations of varied political systems. Heroes know current political trends, world leaders, and political views of government (TN100)',
+          limit: 'Exclusive',
+          name: 'Political Science',
+          experts: {
+            nation: ['Nation'],
+          },
+        },
+        {
+          base: 'Employability',
+          description:
+            "Presentation represents the Hero's capacity to gain another's interest by use of speaking, body language, and gestures. Use of this skill often needs preparation of props, attire, and printed materials. Once interest is gained, Influence comes into play. A good Presentation is the best way to make first impression; however, making contact and peaking interest is just the beginning. The Hero initiates contact with Presentation. Presentation uses skill combiantion with one-shift bonus. The paired skill infers knowledge of subject area infused into the performance. This skill differs form Ettiquete by requiring some form of preparation. Examples may include research, grooming, or creating media materials. Many social situations necessitate both Presentation and Ettiquette. TN's based on overall attitude: TN50-Revered, honored, TN75-Zealous, devoted, TN100-Sympathetic, considerate, TN125-impartial, apathetic, TN150-Antagonistic, annoyed, TN175-Offensive, spiteful, TN200-Hateful, abhorred",
+          limit: 'Universal',
+          name: 'Presentation',
+        },
+        {
+          base: 'Employability',
+          description:
+            'Profiteering includes scams, frauds, and other criminal acts involving wealth and monetary systems. For example, Profiteering determines the target to bribe, an appropriate amount, and route for payment. Entrance to a nightclub may require a bribe, but the doorman might not be the right target. Other skill use includes embezzlement, fencing, fraud, gambling operations, misappropriation, money laundering, racketeering, vice. Specific actiosn may have many parameters used to determine TNs. TN50-Access appropriate bribe, TN75-Detect opportunity for target criminal action, TN100-Lower bribe by 50%, picking wealthy target, TN125-Access profit from target criminal action, TN150-Avoid bribe, set up a racket, determine appropriate ransom; perform fraud on uninvestigated claim, TN175-Predict success of criminal action, TN200-Nearly untraceable sway of public official. Using skill combination, Heroes gain employment. Success produces money from Employability +5, however, there is always a chance to get caught',
+          limit: 'Universal',
+          name: 'Profiteering',
+          experts: {
+            organization: [
+              'bribing Centropolis police department',
+              'embezzling from ACME Goods',
+            ],
+          },
+          pairs: [
+            { skill: 'Games, Wealth', description: 'Gambling' },
+            { description: 'Money laundering', skill: 'Banking' },
+            { description: 'Fencing', skill: 'Economics' },
+            {
+              description: 'Vice, drug ring',
+              skill: 'Pharmaceuticals/Toxicology',
+            },
+            {
+              description: 'Emblezzlement',
+              skill: 'Business Administration',
+            },
+          ],
+        },
+        {
+          base: 'Deduction',
+          description:
+            'Public Administration talents to manage a political post, ranging from a small office to an entire country. Establishing contacts bypassing regulations, and maneuvering bureaucracies are practiced',
+          limit: 'Exclusive',
+          name: 'Public Administration',
+          experts: {
+            location: ["NY mayor's office", 'Chicago post office'],
+          },
+        },
+        {
+          base: 'Faith',
+          description:
+            'Religion is the study of one specific religion. This includes the basis for the religion, its holy services and artifacts, in teachings, and moral codes, and its hierarchy',
+          limit: 'Exclusive',
+          name: 'Religion',
+          experts: {
+            location: ['Oaken Grove', 'Sand Oaks Graveyard', 'Grace Church'],
+          },
+          pairs: [
+            { description: 'Church hierarchy', skill: 'Political Science' },
+            { description: 'Religious items and icons', skill: 'Antiquities' },
+            {
+              description: 'Background, origins, and development',
+              skill: 'History',
+            },
+            { description: 'Specific temples layouts', skill: 'Architecture' },
+            {
+              description: 'Economic structure',
+              skill: 'Business Administration',
+            },
+            {
+              description: 'Making appointments, avoid red-tape',
+              skill: 'Public Administration',
+            },
+          ],
+        },
+        {
+          base: 'Deduction',
+          description:
+            'Xenosociology embodies knowledge of customs and attitudes of an alien culture. The person may also be familiar with non-traiditonal attitudes, sub-cultures, and similar movements within a culture',
+          limit: 'Exclusive',
+          name: 'Xenosociology, species',
+          experts: {
+            varies: ['Varies'],
+          },
+        },
+      ],
+      powers: [
+        {
+          base: 'Mind/2',
+          description:
+            'Power, Mind, spell enables use of a spell or spell-like abilities',
+          limit: 'Exclusive',
+          name: 'Power, Mind, spell',
+        },
+        {
+          base: 'Body/2',
+          description:
+            'Power, Body, spell enables use of a spell or spell-like abilities',
+          limit: 'Exclusive',
+          name: 'Power, Body, spell',
+        },
+        {
+          base: 'Soul/2',
+          description:
+            'Power, Soul, spell enables use of a spell or spell-like abilities',
+          limit: 'Exclusive',
+          name: 'Power, Soul, spell',
+        },
+        {
+          base: 'Wealth/2',
+          description:
+            'Power, Wealth, spell enables use of a spell or spell-like abilities',
+          limit: 'Exclusive',
+          name: 'Power, Wealth, spell',
+        },
+      ],
+      science: [
+        {
+          base: 'Memory',
+          description:
+            'Astronomy is the study and identification of celestial objects. Astronomy identifies the movement of moons, planets, and stars. It predicts conjunctions, eclipses, seasons, and tides. This includes lunar phases and basic navigation by stars (TN100). Spacefaring and technologically advanced genres studies include knowledge of black holes, dark matter, mapping, quasars, spectral analysis, and stellar observation. This skill facilitates the operation of technologies associated with stars in that genre, including telescopes, radio telescopes, and galactic navigating computers',
+          limit: 'Exclusive',
+          name: 'Astronomy',
+          experts: {
+            instrument: ['radio', 'probes', 'refractor', 'pulse'],
+          },
+          pairs: [
+            { description: 'Astrophysics', skill: 'Physics' },
+            { description: 'Astronavigation', skill: 'Geography' },
+            { description: 'Star composition', skill: 'Chemistry' },
+            {
+              description: 'Spacewalk and exploration',
+              skill: 'Extreme Environments',
+            },
+          ],
+        },
+        {
+          base: 'Deduction',
+          description:
+            'Chemistry covers knowledge and use of elements and compounds. Application include use of and creation of explosives. Creation of weapons from this skill requires time, resources, knowledge, and specific preparation. Players must make previous arrangements with Guides with preparation and research. Weapons of this sort have shelf lives from minutes to years. Creation requires a lab, a delivery system, and materials (TN100). Extensive costs cause permanent wealth damage. A substance, grenade, or spray can cause 1d6 per 10 SL. Special effects, such as oil slicks or smoke bombs, must be negotiated with Guide before play',
+          limit: 'Acclimatable',
+          name: 'Chemistry',
+          experts: {
+            types: [
+              'acids',
+              'bases',
+              'catalysts',
+              'dyes',
+              'organic',
+              'explosives',
+              'molecular',
+              'nuclear',
+              'polymers',
+              'salts',
+            ],
+          },
+        },
+        {
+          base: 'Memory',
+          description:
+            'Gemology incorporates location and information of gems and precious stones. Heroes identify precious and semi-precious stones by physical appearance in their raw, refined, and cut forms. It also includes knowledge of gem cutting',
+          limit: 'Exclusive',
+          name: 'Gemology',
+          experts: {
+            types: ['Specific Stone'],
+          },
+        },
+        {
+          base: 'Memory',
+          description:
+            'Geology includes extraction of minerals, ores, and gems from the earth as well as exploration of terrain for mineral deposits, seismic faults, and volcanic activity. Skilled users know location, identity, and use of non-precious stones and minerals in raw, refined and smelted forms. Smelting is a skill combination of Geology and Smithing. This skill is used to remove gems from substrate',
+          limit: 'Acclimatable',
+          name: 'Geology/Mining',
+          experts: {
+            style: ['Specific Mine', 'Specific Mineral Type'],
+          },
+        },
+        {
+          base: 'Mind/2',
+          description:
+            'Mathematics measures capability with basic and advanced mathematics. Heroes estimate distance and travel time, calculate projectile motion for sighting trajectory, or determine billing to ensure no charge overage. In some genres, Mathematics is the Linguistics of Computer Science and may be used at a one-shift penalty',
+          limit: 'Acclimatable',
+          name: 'Mathematics',
+          experts: {
+            style: [
+              'computation',
+              'measuring',
+              'probability',
+              'spatial',
+              'statistics',
+              'theoretical',
+              'chaos theory',
+            ],
+          },
+        },
+        {
+          base: 'Faith',
+          description:
+            'Parapsychology embodies use of technology to detect, classify and identify creatures and castings of magical nature, including ghosts, haunts, curses, and spirits (TN100). It also covers description and study of supernatural qualities and magical entities (TN100). It is not considered a serious academic pursuit by most of the learned',
+          limit: 'Exclusive',
+          name: 'Parapsychology',
+          experts: {
+            style: ['Specific Creature', 'Specific Casting Skill'],
+          },
+        },
+        {
+          base: 'Deduction',
+          description:
+            'Physics covers knowledge and use of matter, energy, motion, and sub-atomic particles',
+          limit: 'Acclimatable',
+          name: 'Physics',
+          experts: {
+            style: [
+              'lasers',
+              'light',
+              'nuclear',
+              'particle',
+              'projectiles',
+              'simple motion',
+              'theoretical',
+            ],
+          },
+        },
+      ],
+      sneak: [
+        {
+          base: 'Dexterity',
+          description:
+            'Hide embodies how to stay out of visual sight. Examples include: ducking into shadows or using terrain to cover to stay hidden. Moving generates penalty shifts depending on speed. Experts, using special equipment, can also disguise other senses (smell, taste, touch, and hearing). Vision and sound are the two most common senses masked. Masking scent requires SL 40. Taste and touch require SL 60. In order to not leave tracks, use skill combination with Hunt. Guides should consider additional penalty shifts for each sense masked. Hide uses the TN Match rules for resolution versus Perception. It is impossible to Hide if under casual or direct observation; a momentary distraction may justify use. The mechanic used for Hide is TN match with best Perception. The observer needs to match the TN established by the hider to see the person hiding. If they miss by one shift, they know the space is occupied. If the observer misses by two shifts, they know the direction someon is hiding. If they TN match is missed by more than two shifts, the person is concealed. Movement modifiers include: 2 shift bonus-Under size 0, no light, no sound, 1 shift bonus-Size 0, under one-half speed, low light, obscured, no bonus-Size 1, one-half speed, 1 shift penalty-Size 2, over one-half speed, 2 shift penalty-Over size 2, running, charging',
+          limit: 'Universal',
+          name: 'Hide',
+          experts: {
+            location: [
+              'Queens',
+              'Bronx',
+              'Sherwood Forest',
+              'USS Nimitz',
+              "Druid's Grove",
+            ],
           },
         },
       ],

@@ -11,7 +11,8 @@ type BaseResource =
   | 'Soul/2'
   | 'Faith'
   | 'All 4 Resources/4'
-type Limit = 'Universal' | 'Exclusive' | 'Acclimatable' | 'Any'
+  | 'Employability'
+type Limit = 'Universal' | 'Exclusive' | 'Acclimatable'
 
 export interface Skill {
   name: string
