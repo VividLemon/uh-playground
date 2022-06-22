@@ -1,9 +1,9 @@
-import { Skills } from '@/types'
+import { GameSkills } from '@/types'
 
-export const a: Array<Skills> = [
+export const a: Array<GameSkills> = [
   {
     id: 1,
-    world: 'a',
+    world: 'Universal Horizons',
     classes: {
       art: {
         skills: [
@@ -1897,6 +1897,7 @@ export const a: Array<Skills> = [
       },
       // TODO all skills are done, however
       // need to add descriptions for classes
+      // I also need to add the "abreviation" for skills
       // I need to replace ... for line breaks
       // and a few skills are 'any' that were accidentally left to Universal -- few
     },

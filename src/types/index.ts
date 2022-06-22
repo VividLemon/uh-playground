@@ -1,0 +1,8 @@
+export type { default as GameBaseResource } from './GameBaseResource'
+export type { default as GameMagic } from './GameMagic'
+export type { default as GameMagicComponent } from './GameMagicComponent'
+export type { default as GameMagics } from './GameMagics'
+export type { default as GameSkill } from './GameSkill'
+export type { default as GameSkillClass } from './GameSkillClass'
+export type { default as GameSkillLimit } from './GameSkillLimit'
+export type { default as GameSkills } from './GameSkills'

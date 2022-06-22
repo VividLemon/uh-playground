@@ -1,5 +1,4 @@
-import { Skill } from '.'
-type Class =
+type GameSkillClass =
   | 'build'
   | 'art'
   | 'buy'
@@ -19,9 +18,4 @@ type Class =
   | 'expertise'
   | 'trick'
 
-export interface Skills {
-  id: number
-  world: string
-  // eslint-disable-next-line no-unused-vars
-  classes: { [K in Class]: { description: string; skills: Array<Skill> } }
-}
+export default GameSkillClass

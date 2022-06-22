@@ -1,10 +1,10 @@
-import { Skills } from '@/types'
+import { GameSkills } from '@/types'
 import { defineStore } from 'pinia'
 import { fs, path, notification } from '@tauri-apps/api'
 import { useI18n } from 'vue-i18n'
 
 interface State {
-  skills: Array<Skills>
+  skills: Array<GameSkills>
 }
 
 export const useSkillStore = defineStore('skills', {
@@ -12,7 +12,7 @@ export const useSkillStore = defineStore('skills', {
     skills: [],
   }),
   getters: {
-    getSkills: (state): Array<Skills> => state.skills,
+    getSkills: (state): Array<GameSkills> => state.skills,
   },
   actions: {
     async getSkillsFilePath(): Promise<string> {

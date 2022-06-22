@@ -1,6 +1,6 @@
-import { MagicComponent } from '.'
+import type { MagicComponent } from '.'
 
-export interface Magic {
+interface GameMagic {
   name: string
   description: string
   level: number
@@ -11,3 +11,5 @@ export interface Magic {
   duration: string
   other: string
 }
+
+export default GameMagic

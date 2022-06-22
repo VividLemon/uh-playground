@@ -1,10 +1,10 @@
-import { Magics } from '@/types'
+import { GameMagics } from '@/types'
 import { defineStore } from 'pinia'
 import { fs, path, notification } from '@tauri-apps/api'
 import { useI18n } from 'vue-i18n'
 
 interface State {
-  magics: Array<Magics>
+  magics: Array<GameMagics>
 }
 
 export const useMagicStore = defineStore('magics', {
@@ -12,7 +12,7 @@ export const useMagicStore = defineStore('magics', {
     magics: [],
   }),
   getters: {
-    getMagics: (state): Array<Magics> => state.magics,
+    getMagics: (state): Array<GameMagics> => state.magics,
   },
   actions: {
     async getMagicsFilePath(): Promise<string> {
