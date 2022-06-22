@@ -10,9 +10,10 @@ type BaseResource =
   | 'Varies'
   | 'Soul/2'
   | 'Faith'
-  | 'All 4 Resources/4'
+  | 'Sum of all resources / 4'
+  | 'Sum of all resources / 8'
   | 'Employability'
-type Limit = 'Universal' | 'Exclusive' | 'Acclimatable'
+type Limit = 'Universal' | 'Exclusive' | 'Acclimatable' | 'Any'
 
 export interface Skill {
   name: string

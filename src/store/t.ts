@@ -67,8 +67,8 @@ export const a: Array<Skills> = [
               description: 'Spot site for border crossing',
             },
             { skill: 'Psychology', description: 'Simulating torture' },
-            { skill: 'Badm', description: 'Embezzlement' },
-            { skill: 'Padm', description: 'Smuggling' },
+            { skill: 'Business Administration', description: 'Embezzlement' },
+            { skill: 'Public Administration', description: 'Smuggling' },
             {
               skill: 'Textiles',
               description: 'Concealment of items in clothing',
@@ -547,7 +547,7 @@ export const a: Array<Skills> = [
         {
           base: 'Dexterity',
           description:
-            'Combat General Range focuses on the art and tactices of projectile combat. Attacks with this skill are TN125. A Hero with skill gains improvisation of any object as a thrown weapon. Combat General Range also gains proficiency in all projectile and grenade weapons. To be clear, self-projected weapons, siege machines, and mounted weapons are covered in other Combat General skills. Strength modifiers do not apply to damage. Combat General Range can be used to launch ray spells (TN100)',
+            'Combat General Range focuses on the art and tactics of projectile combat. Attacks with this skill are TN125. A Hero with skill gains improvisation of any object as a thrown weapon. Combat General Range also gains proficiency in all projectile and grenade weapons. To be clear, self-projected weapons, siege machines, and mounted weapons are covered in other Combat General skills. Strength modifiers do not apply to damage. Combat General Range can be used to launch ray spells (TN100)',
           limit: 'Universal',
           name: 'Combat General Range',
         },
@@ -575,14 +575,14 @@ export const a: Array<Skills> = [
         {
           base: 'Dexterity',
           description:
-            'Combat Grenades covers the use of grenades icnluding: concussion grenades, vials of holy water, and dynamite. Weapons in this group are designed to active upon landing on or near the target. In addition to primary damage, splash damage affects each adjacent space. Spells use Combat Grenade to launch ray spells at two shifts penalty (TN125)',
+            'Combat Grenades covers the use of grenades including: concussion grenades, vials of holy water, and dynamite. Weapons in this group are designed to active upon landing on or near the target. In addition to primary damage, splash damage affects each adjacent space. Spells use Combat Grenade to launch ray spells at two shifts penalty (TN125)',
           limit: 'Universal',
           name: 'Combat Grenades',
         },
         {
           base: 'Strength',
           description:
-            'Combat Natural Weapons includes use of natural weapons. Examples across multiple genres include claw, bite, tail, pseudopod, slam, tentacle, tail, wing buffet, and head-butt',
+            'Combat Natural Weapons includes use of natural weapons. Examples across multiple genres include claw, bite, tail, pseudo-pod, slam, tentacle, tail, wing buffet, and head-butt',
           limit: 'Universal',
           name: 'Combat Natural Weapons, weapon',
         },
@@ -652,7 +652,7 @@ export const a: Array<Skills> = [
         {
           base: 'Body/2',
           description:
-            'Combat Unarmed is based on various forms of unarmed combat, including wrestling, boxing, street-fighting, and judo. Various techniques may change for these styles, and includes use of body parts not normally designed for combat: head-butting, punching, kicking, etc. The combatant may choose to do regular or non-lethal damage. Brass knuckles is an example of an available weapon. Expertise in Combat Unarmed does not specialize in a particular form of karate or the like. Instead, the core system allows expertise by specifying a specific body part such as hand, leg, body, or head. The Hero should be mindful in tehir selection if they expand with tricks such as sunder, trip, push, or knockout.',
+            'Combat Unarmed is based on various forms of unarmed combat, including wrestling, boxing, street-fighting, and judo. Various techniques may change for these styles, and includes use of body parts not normally designed for combat: head-butting, punching, kicking, etc. The combatant may choose to do regular or non-lethal damage. Brass knuckles is an example of an available weapon. Expertise in Combat Unarmed does not specialize in a particular form of karate or the like. Instead, the core system allows expertise by specifying a specific body part such as hand, leg, body, or head. The Hero should be mindful in their selection if they expand with tricks such as sunder, trip, push, or knockout.',
           limit: 'Universal',
           name: 'Combat Unarmed',
         },
@@ -666,14 +666,14 @@ export const a: Array<Skills> = [
         {
           base: 'Varies',
           description:
-            "Combat Weapon Mastery represents pinnacle use of a specific weapon and it's detailed in genre handbooks for specific genres that allow it's use. This skill provides tricks at rank 20, 40, and 60 without using the normal skill combination, prerequisites skills, or skill chain rules. Acquired tricks are gained from trainers and are genre exclusive. Alternatively, expertise may substitute for the first acquired trick. When this skill is used in conjuction with any other skill, skill combination rules apply similarly as expertise. Weapon access has the same restrictions as CWEXP",
+            "Combat Weapon Mastery represents pinnacle use of a specific weapon and it's detailed in genre handbooks for specific genres that allow it's use. This skill provides tricks at rank 20, 40, and 60 without using the normal skill combination, prerequisites skills, or skill chain rules. Acquired tricks are gained from trainers and are genre exclusive. Alternatively, expertise may substitute for the first acquired trick. When this skill is used in conjunction with any other skill, skill combination rules apply similarly as expertise. Weapon access has the same restrictions as CWEXP",
           limit: 'Exclusive',
           name: 'Combat Weapon Mastery, weapon',
         },
         {
           base: 'Varies',
           description:
-            "Combat Weapon Tricks enables one trick to be learned with one specific weapon type, not with a weapon class. It can be learned for more than one weapon, each with it's separate rank. This skill is subject to skil combination rules. Example tricks that can be learned in this system are disarm, sunder (prerequisite of disarm), trip, grapple (prerequisite of trip), shove, overrun (prerequisite of shove). Use in an atypical manner (throwing a bastard sword, triggering a machine gun and having it go off while it falls down the stairs), or drawing the weapon quickly",
+            "Combat Weapon Tricks enables one trick to be learned with one specific weapon type, not with a weapon class. It can be learned for more than one weapon, each with it's separate rank. This skill is subject to skill combination rules. Example tricks that can be learned in this system are disarm, sunder (prerequisite of disarm), trip, grapple (prerequisite of trip), shove, overrun (prerequisite of shove). Use in an atypical manner (throwing a bastard sword, triggering a machine gun and having it go off while it falls down the stairs), or drawing the weapon quickly",
           limit: 'Universal',
           name: 'Combat Weapon Tricks, weapon',
         },
@@ -719,7 +719,7 @@ export const a: Array<Skills> = [
         {
           base: 'Body/2',
           description:
-            'First Aid relieves Body stress from trauma. This may include resuscitation, triage of injured patients, or removal of foreign bodies. Use of this skill is specific to race, and shift(s) apply as per the Guide. Functions include stabilizing dying characters in any of Mind/Body/Soul and assistance in recovering Resource while resting (TN50, subject to toher modifiers per Guide discretion). Stabiliziation can be done only once per character per five minutes without special equipment (TN100 in combat, TN50 if not). Characters can care for on other person per 10 rank. Heroes apply First Aid to general populations with implementation of correct hygiene procedure. Application does not cure disease, however, it may prevent the onset and severity of infections. First Aid treats symptoms; it does not cure diseases. TN25-Heimlich maneuver; tourniquet, TN50-Cauterize wounds; bind wounds; stabilization, TN75-Remove barbs and shrapnel; remove giant leech, TN100-Slow poison; field tracheostomy, TN125-Remove tape worms, TN150-Remove hook worms from muscle',
+            'First Aid relieves Body stress from trauma. This may include resuscitation, triage of injured patients, or removal of foreign bodies. Use of this skill is specific to race, and shift(s) apply as per the Guide. Functions include stabilizing dying characters in any of Mind/Body/Soul and assistance in recovering Resource while resting (TN50, subject to other modifiers per Guide discretion). Stabilization can be done only once per character per five minutes without special equipment (TN100 in combat, TN50 if not). Characters can care for on other person per 10 rank. Heroes apply First Aid to general populations with implementation of correct hygiene procedure. Application does not cure disease, however, it may prevent the onset and severity of infections. First Aid treats symptoms; it does not cure diseases. TN25-Heimlich maneuver; tourniquet, TN50-Cauterize wounds; bind wounds; stabilization, TN75-Remove barbs and shrapnel; remove giant leech, TN100-Slow poison; field tracheotomy, TN125-Remove tape worms, TN150-Remove hook worms from muscle',
           limit: 'Universal',
           name: 'First Aid, species',
           experts: {
@@ -736,7 +736,7 @@ export const a: Array<Skills> = [
         {
           base: 'Mind/2',
           description:
-            'Medicine is the academic anatomy, biochemistry, and medical care of a single sentient race. This skill enables acute repair and long-term care of chronic ailments, as well as acute severe infections. This skill differs from First Aid as it is used for problems like diseases, surgery, and medications. Medicine can function as First Aid with an additional two-shift penalty. Medicine can identify diseases (TN150). A proper lab, family history, examination, and x-rays each add a shift. Rarity and similarity to other diseases may add negative shifts. Magical diseases are two-shifts higher to detect without obvious symptoms. This producedure-based skill cures damaged Body at a rate of 1d6/10 Rank and can only be used once per day per patient such use also removes all non-lethal damage. Target numbers are TN100, TN50 using the appropriate equipment and environment. The appropriate environment to practice Medicine is a hospital. Practice restores Dexterity and Strength damage one point per hour up to rank modifier. Patients can sustain only one session per day. Target number is TN150, TN100 using the appropriate equipment and environment',
+            'Medicine is the academic anatomy, biochemistry, and medical care of a single sentient race. This skill enables acute repair and long-term care of chronic ailments, as well as acute severe infections. This skill differs from First Aid as it is used for problems like diseases, surgery, and medications. Medicine can function as First Aid with an additional two-shift penalty. Medicine can identify diseases (TN150). A proper lab, family history, examination, and x-rays each add a shift. Rarity and similarity to other diseases may add negative shifts. Magical diseases are two-shifts higher to detect without obvious symptoms. This procedure-based skill cures damaged Body at a rate of 1d6/10 Rank and can only be used once per day per patient such use also removes all non-lethal damage. Target numbers are TN100, TN50 using the appropriate equipment and environment. The appropriate environment to practice Medicine is a hospital. Practice restores Dexterity and Strength damage one point per hour up to rank modifier. Patients can sustain only one session per day. Target number is TN150, TN100 using the appropriate equipment and environment',
           limit: 'Acclimatable',
           name: 'Medicine, species',
           experts: {
@@ -765,7 +765,7 @@ export const a: Array<Skills> = [
         {
           base: 'Mind/2',
           description:
-            'Psychology is long term mental care of chronic mental ailments and acute severe mental illnesses/insanities. This procedure-based skill cures damaged Mind at a rate of 1d6/10 Rank and can only be used once per day per patient; such use also removes all non-lethal damage (TN100, TN50 using the appropriate equipment and environment conducive to uninterrupted conversation.) Other modifiers apply according to Guide discretion. Therapy with this skill restores Deduction and Memory damage one point per hour up to rank modifier. Patients can sustain only one session per day (TN150, TN100 using the appropriate equipment and environment.)',
+            'Psychology is long term mental care of chronic mental ailments and acute severe mental illnesses/insanity. This procedure-based skill cures damaged Mind at a rate of 1d6/10 Rank and can only be used once per day per patient; such use also removes all non-lethal damage (TN100, TN50 using the appropriate equipment and environment conducive to uninterrupted conversation.) Other modifiers apply according to Guide discretion. Therapy with this skill restores Deduction and Memory damage one point per hour up to rank modifier. Patients can sustain only one session per day (TN150, TN100 using the appropriate equipment and environment.)',
           limit: 'Acclimatable',
           name: 'Psychology',
           experts: {
@@ -775,9 +775,9 @@ export const a: Array<Skills> = [
         {
           base: 'Faith',
           description:
-            'Spiritual Medicine integrates a conceptualization of Mind, Body, and Soul as one entity to heal the Hero. By tapping into all resource energies, a practitioner may heal Mind/Body/Soul. Various examples include chiropractic, hypnosis, reflexology, macrobiotics, energy medicine, phrenology, sweat lodges, biorhythms, joss/incense, paperburning, acupuncture, chakra hot stones, homeopathy, cupping, and coining. Spiritual Medicine heals appropriate Resource at a rank of 1d6/10 Rank per patient to heal all three Resources once per day as determined by the recipient; such use also removes all non-lethal damage (TN150). The best use of this skill controls the senses through appropriate equipment and environment (TN100). Examples of control are trickling water, therapeutic cushions, specialized oils, applied medicinal therapy, and calming music. Other modifiers apply according to Guide discretion',
+            'Spiritual Medicine integrates a conceptualization of Mind, Body, and Soul as one entity to heal the Hero. By tapping into all resource energies, a practitioner may heal Mind/Body/Soul. Various examples include chiropractic, hypnosis, reflexology, macrobiotics, energy medicine, phrenology, sweat lodges, biorhythms, joss/incense, paper-burning, acupuncture, chakra hot stones, homeopathy, cupping, and coining. Spiritual Medicine heals appropriate Resource at a rank of 1d6/10 Rank per patient to heal all three Resources once per day as determined by the recipient; such use also removes all non-lethal damage (TN150). The best use of this skill controls the senses through appropriate equipment and environment (TN100). Examples of control are trickling water, therapeutic cushions, specialized oils, applied medicinal therapy, and calming music. Other modifiers apply according to Guide discretion',
           limit: 'Exclusive',
-          name: 'Spiritual Therapy, species',
+          name: 'Spiritual Medicine, species',
           experts: {
             setting: ['Temple of Chi', 'Ironwood Serenity Grove'],
             mind: ['only'],
@@ -786,9 +786,9 @@ export const a: Array<Skills> = [
           },
         },
         {
-          base: 'All 4 Resources/4',
+          base: 'Sum of all resources / 4',
           description:
-            'Yoga includes boody manipulation and mental meditation to enable a higher state of relaxation and awareness. Daily practice yields bonus recovery of resources equal to rank dividing amongs Mind/Body/Soul. Different genres may also allow additional abilities/powers. This procedure-based skill cures damaged Mind/Body/Soul at a rate of 1d6/10 Rank and can only be used once per day; such use also removes all non-lethal damage. It cannot be used on others without skill combination or skill tricks. Target numbers are TN100, TN50 using the appropriate equipment and environment conducive to calm relaxation. Other modifiers apply according to Guide discretion. If any ability score is at zero, Yoga cannot be performed',
+            'Yoga includes body manipulation and mental meditation to enable a higher state of relaxation and awareness. Daily practice yields bonus recovery of resources equal to rank dividing among Mind/Body/Soul. Different genres may also allow additional abilities/powers. This procedure-based skill cures damaged Mind/Body/Soul at a rate of 1d6/10 Rank and can only be used once per day; such use also removes all non-lethal damage. It cannot be used on others without skill combination or skill tricks. Target numbers are TN100, TN50 using the appropriate equipment and environment conducive to calm relaxation. Other modifiers apply according to Guide discretion. If any ability score is at zero, Yoga cannot be performed',
           limit: 'Acclimatable',
           name: 'Transcendence/Yoga',
         },
@@ -869,7 +869,7 @@ export const a: Array<Skills> = [
           name: 'History',
           experts: {
             nationality: ['Nation'],
-            period: ['stone age', 'renaisssance', "60's"],
+            period: ['stone age', 'renaissance', "60's"],
           },
         },
         {
@@ -901,14 +901,14 @@ export const a: Array<Skills> = [
               'cavalry type',
               'infantry type',
               'tanks',
-              'figher jets',
+              'fighter jets',
             ],
           },
         },
         {
           base: 'Soul/2',
           description:
-            'Occult Sciences provides information and insight into creatures and castings of magical nature. The user must have experienced or knowingly interacted with the spell in question. When analyzing creatures, Occult Sciences identifies ubiquitous abilities of the target creature. The Guide controls how often information may be disseminated. Additional information about a spell is gathered from higher TN rolls, TN50-Casting area, TN75-Casting level, TN100-Casting name; creature has magical ability, TN125-Level of magical ability of creature, TN150-One specific magical ability of creature, TN175-d3 additonal magical abilities of creature',
+            'Occult Sciences provides information and insight into creatures and castings of magical nature. The user must have experienced or knowingly interacted with the spell in question. When analyzing creatures, Occult Sciences identifies ubiquitous abilities of the target creature. The Guide controls how often information may be disseminated. Additional information about a spell is gathered from higher TN rolls, TN50-Casting area, TN75-Casting level, TN100-Casting name; creature has magical ability, TN125-Level of magical ability of creature, TN150-One specific magical ability of creature, TN175-d3 additional magical abilities of creature',
           limit: 'Exclusive',
           name: 'Occult Sciences',
           experts: {
@@ -920,7 +920,7 @@ export const a: Array<Skills> = [
         {
           base: 'Imagination',
           description:
-            "Animal Handling calms and trains normal non-sentient non-evolved animals. Animal Handling calms animals; the disposition of an animal depends on its current situation, demeanor, and status. For wild animals, the attitude change will last one day, at most. If befriending wild animals, Soul Influence is used in skill combination with Animal Handling. This process takes a day. Difficult breads, mishandled, or poor disposition may take many days or weeks. Teaching commands to befriended animals gains a one-shift bonus. Once an animal is befriended, teh animal is under-command and may perform commands. Commands use Animal Handling directly. Without training, a befriended animal may: Carry-Permits tethered transportation of objects, Feed-Directs the timing and object to be consumed, Defend owner*-Animal attacks threaning foes, Untrained commands may be attempted at two shifts harder. Any Hero may have one befriended animal. More animals may be attracted using Leadership. A befriended animal may be trained in five additional commands, plus one per five of the animal's Memory. The time needed to train a trick is one week per 50TN of difficulty, after modifiers. Animals are limited to a certain number of tricks. Once that limit is reached, a current trick must be untaught (TN150) before another one can replace it.",
+            "Animal Handling calms and trains normal non-sentient non-evolved animals. Animal Handling calms animals; the disposition of an animal depends on its current situation, demeanor, and status. For wild animals, the attitude change will last one day, at most. If befriending wild animals, Soul Influence is used in skill combination with Animal Handling. This process takes a day. Difficult breads, mishandled, or poor disposition may take many days or weeks. Teaching commands to befriended animals gains a one-shift bonus. Once an animal is befriended, the animal is under-command and may perform commands. Commands use Animal Handling directly. Without training, a befriended animal may: Carry-Permits tethered transportation of objects, Feed-Directs the timing and object to be consumed, Defend owner*-Animal attacks threatening foes, Untrained commands may be attempted at two shifts harder. Any Hero may have one befriended animal. More animals may be attracted using Leadership. A befriended animal may be trained in five additional commands, plus one per five of the animal's Memory. The time needed to train a trick is one week per 50TN of difficulty, after modifiers. Animals are limited to a certain number of tricks. Once that limit is reached, a current trick must be untaught (TN150) before another one can replace it.",
           limit: 'Exclusive',
           name: 'Animal Handling',
           experts: {
@@ -930,7 +930,7 @@ export const a: Array<Skills> = [
         {
           base: 'Memory',
           description:
-            'Biology encompasses general knowledge, identity, and functions of living systems. This skill provides specific information on living organisms not convered under Zoology and Botany, such as protozoans, diatoms, or fungi (TN50). Biology can mimic Botany, Ecology, or Zoology at one shift penalty for identification',
+            'Biology encompasses general knowledge, identity, and functions of living systems. This skill provides specific information on living organisms not covered under Zoology and Botany, such as protozoans, diatoms, or fungi (TN50). Biology can mimic Botany, Ecology, or Zoology at one shift penalty for identification',
           limit: 'Exclusive',
           name: 'Biology',
           experts: {
@@ -950,7 +950,7 @@ export const a: Array<Skills> = [
         {
           base: 'Memory',
           description:
-            'Botanty involves knowledge about plant life. The individual can discover use of plants, including edibility, curative and harmful properties, and sentience',
+            'Botany involves knowledge about plant life. The individual can discover use of plants, including edibility, curative and harmful properties, and sentience',
           limit: 'Exclusive',
           name: 'Botany',
           experts: {
@@ -961,7 +961,7 @@ export const a: Array<Skills> = [
         {
           base: 'Memory',
           description:
-            'Ecology embraces environmental systems, interactions, influences, and various environmental issues. Ecologists analyze creatures and how their populations affect biomes. Use includes discovering oddities in nature, determining the cause, and recomending the remedy. TNs depend on setting, genre of origin, and other variables as per the Guide',
+            'Ecology embraces environmental systems, interactions, influences, and various environmental issues. Ecologists analyze creatures and how their populations affect biomes. Use includes discovering oddities in nature, determining the cause, and recommending the remedy. TNs depend on setting, genre of origin, and other variables as per the Guide',
           limit: 'Acclimatable',
           name: 'Ecology',
           experts: {
@@ -981,7 +981,7 @@ export const a: Array<Skills> = [
         {
           base: 'Memory',
           description:
-            "Xenomorphology provides knowledge of one alien species, with general anatomy, phsyiology, behaviors, vulnerabilites, and habitats. Through skill combination Medicine, Psychology, and other species specific skills can be applied to the alien species. Xenomorphology can be learned for more that one species, each with it's separate Rank. In some worlds, Xenomorphology is a single skill area covering all alien life, possibly considered a charlatan study if the general public does not recognize the existence of aliens",
+            "Xenomorphology provides knowledge of one alien species, with general anatomy, physiology, behaviors, vulnerabilities, and habitats. Through skill combination Medicine, Psychology, and other species specific skills can be applied to the alien species. Xenomorphology can be learned for more that one species, each with it's separate Rank. In some worlds, Xenomorphology is a single skill area covering all alien life, possibly considered a charlatan study if the general public does not recognize the existence of aliens",
           limit: 'Exclusive',
           name: 'Xenomorphology',
           experts: {
@@ -1001,7 +1001,7 @@ export const a: Array<Skills> = [
               'insects',
               'worms',
               'amphibians',
-              'avians',
+              'avian',
               'reptiles',
             ],
             style: ['pathology'],
@@ -1012,7 +1012,7 @@ export const a: Array<Skills> = [
         {
           base: 'Memory',
           description:
-            'Alchemy allows creation of magical concoctions, potions, and elixers with underlying principles based on the theory of five elements. Alchemy of Araqunidia™ is explained in the Araqunidia™ Genre Handbook and differs greatly from traditional alchemy',
+            'Alchemy allows creation of magical concoctions, potions, and elixirs with underlying principles based on the theory of five elements. Alchemy of Araqunidia™ is explained in the Araqunidia™ Genre Handbook and differs greatly from traditional alchemy',
           limit: 'Exclusive',
           name: 'Alchemy',
         },
@@ -1026,12 +1026,12 @@ export const a: Array<Skills> = [
         {
           base: 'Wealth/2',
           description:
-            'Banking exists in genres that utilize currency. This skill includes familliarity with practices of investment, loands, and monetary exchange with castings',
+            'Banking exists in genres that utilize currency. This skill includes familiarity with practices of investment, loans, and monetary exchange with castings',
           limit: 'Exclusive',
           name: 'Banking',
         },
         {
-          base: 'All 4 Resources/4',
+          base: 'Sum of all resources / 4',
           description:
             'Binding comprises enchantment of individuals and items with magical effects, both temporary and permanent',
           limit: 'Exclusive',
@@ -1047,7 +1047,7 @@ export const a: Array<Skills> = [
         {
           base: 'Soul/2',
           description:
-            'Foretelling reveals information about individuals, including their background, attitudes, and future. The foreteller is "certain" readings are correct , but often does not provide 100% accurate information. Charlatans color the repuation of this skill by falsely pretending to read the future of clients, patrons, and passersby, using Thespianism, Legerdemain, Deception, and Deduction',
+            'Foretelling reveals information about individuals, including their background, attitudes, and future. The fore-teller is "certain" readings are correct , but often does not provide 100% accurate information. Charlatans color the reputation of this skill by falsely pretending to read the future of clients, patrons, and passersby, using Thespianism, Legerdemain, Deception, and Deduction',
           limit: 'Exclusive',
           name: 'Foretelling',
         },
@@ -1058,7 +1058,7 @@ export const a: Array<Skills> = [
           name: 'Kinesis',
         },
         {
-          base: 'All 4 Resources/4',
+          base: 'Sum of all resources / 4',
           description:
             'Melodic Magic uses rhythm, chanting, and music to cast spells',
           limit: 'Exclusive',
@@ -1086,7 +1086,7 @@ export const a: Array<Skills> = [
           name: 'Numerology',
         },
         {
-          base: 'All 4 Resources/4',
+          base: 'Sum of all resources / 4',
           description:
             'Runecraft enchants areas with magical glyphs through drawings, paintings, and other etchings',
           limit: 'Exclusive',
@@ -1149,7 +1149,7 @@ export const a: Array<Skills> = [
         {
           base: 'Memory',
           description:
-            'Wizardry is the academic, scholasitc, and taught method of magic emulation and manipulation',
+            'Wizardry is the academic, scholastic, and taught method of magic emulation and manipulation',
           limit: 'Exclusive',
           name: 'Wizardry',
         },
@@ -1162,7 +1162,7 @@ export const a: Array<Skills> = [
           limit: 'Acclimatable',
           name: 'Driving',
           experts: {
-            vehicle: ["Abram's Tank", 'Iowa class battleship', 'Mustange'],
+            vehicle: ["Abram's Tank", 'Iowa class battleship', 'Mustang'],
           },
         },
         {
@@ -1235,7 +1235,7 @@ export const a: Array<Skills> = [
         {
           base: 'Deduction',
           description:
-            "Criminology covers intricacies, motivation, and patterns of behaviors of villains to predict potential future behaviors, plots and clues about crimes. Skill use may discover and interpret anomalies (clues) in a criminal setting. Guides assign situational modifiers based on how clues are connected and how prominent the media has made the crime. The criminal's motive affects the outcome dependent on their predictability, connectivity to society, and passion to the crime. Lastly, investigators must gather and have the appropriate skills to interpret the evidence. A Hero can narrow as long list of possibilies to two to four alternatives. Crime scenes vary in interpretation from where the murder was committed, how bodies or evidence were transported, where evidence is disposed, and where crimes are conceived. Plots complexity can be one scene, one mod, one adventure, or whole campaign. TN50-Identifies crime scene, TN75-Identifies object of crime; list of possible plots, TN100 Narrows background of criminal; leads to other crime scenes; detects planted or tampered evidence, TN125-Narrows motives; possible locales of criminal; narrows possible plots, TN150-Predicts locale of crime scene; identifies skills of criminal; identifies profession of criminal; identifies primary crime scene, TN175-Locale visited by criminal (past or present); identifies false plot, TN200-Identifies criminal, TN225-Identifies master plot. 2 shift bonus-One-week investigation; visual recording or witnessed crime, 1 shift bonus-One-day investigation; detailed record with all clues recovered and preserved; fresh scene or first to arrive, no bonus-One-hour investigation; most clues recovered and preserved; sealed crime scene, 1 shift penalty-ten-minute investigation; few clues recovered; scene partially investigated, 2 shift penalty-One-minute investigation; no clues recovered; scene compromised with heavy traffic",
+            "Criminology covers intricacies, motivation, and patterns of behaviors of villains to predict potential future behaviors, plots and clues about crimes. Skill use may discover and interpret anomalies (clues) in a criminal setting. Guides assign situational modifiers based on how clues are connected and how prominent the media has made the crime. The criminal's motive affects the outcome dependent on their predictability, connectivity to society, and passion to the crime. Lastly, investigators must gather and have the appropriate skills to interpret the evidence. A Hero can narrow as long list of possibilities to two to four alternatives. Crime scenes vary in interpretation from where the murder was committed, how bodies or evidence were transported, where evidence is disposed, and where crimes are conceived. Plots complexity can be one scene, one mod, one adventure, or whole campaign. TN50-Identifies crime scene, TN75-Identifies object of crime; list of possible plots, TN100 Narrows background of criminal; leads to other crime scenes; detects planted or tampered evidence, TN125-Narrows motives; possible locales of criminal; narrows possible plots, TN150-Predicts locale of crime scene; identifies skills of criminal; identifies profession of criminal; identifies primary crime scene, TN175-Locale visited by criminal (past or present); identifies false plot, TN200-Identifies criminal, TN225-Identifies master plot. 2 shift bonus-One-week investigation; visual recording or witnessed crime, 1 shift bonus-One-day investigation; detailed record with all clues recovered and preserved; fresh scene or first to arrive, no bonus-One-hour investigation; most clues recovered and preserved; sealed crime scene, 1 shift penalty-ten-minute investigation; few clues recovered; scene partially investigated, 2 shift penalty-One-minute investigation; no clues recovered; scene compromised with heavy traffic",
           limit: 'Universal',
           name: 'Criminology',
           experts: {
@@ -1274,7 +1274,7 @@ export const a: Array<Skills> = [
         {
           base: 'Body/2',
           description:
-            'Handiworks crafts and designs simple articles and performs services from commonly found materials. It mimics of a variety of skills at one-shift penalty including Domestics, Masonry, Farming, Geology, Hunting, Leatherwork, Construction, and Textiles',
+            'Handiworks crafts and designs simple articles and performs services from commonly found materials. It mimics of a variety of skills at one-shift penalty including Domestics, Masonry, Farming, Geology, Hunting, Leather-work, Construction, and Textiles',
           limit: 'Acclimatable',
           name: 'Handiworks',
         },
@@ -1301,7 +1301,7 @@ export const a: Array<Skills> = [
         {
           base: 'Faith',
           description:
-            'Leadership is the ability to command other sentient beings. With this skill, Heroes direct people in emergency situations, gain followers, and organize others. Leaders slowly acquire followers over time and extensive game play. Leaders acquire charges based on military rank or business organizations. Rolls are necessary for tests of loyalty, morale, and rallying subjects. TNs based on overall attitude: TN50-Revered, honored, TN75-Zealous, devoted, TN100-Sympathetic, considerate, TN125-impartial, apathetic, TN150-Antagonistic, annoyed, TN175-Offensive, spiteful, TN200-Hateful, abhorred. 2 bonus shift-Loc 1 week, elites, rewards, 1 bonus shift-LoC 1 day, regulars, paid, no bonus-LoC 1 hour, enlisted, no pay, 1 penalty shift-LoC 10 min, conscripts, indentured, 2 penalty shift-LoC 1 min, commoners, taxes, combat, 3 penalty shift-LoC 1 round, slaves. LoC -- Length of command is the time the Hero has been instructing the crowd, troops, or followers. Heroes gain sidekicks with expertise in this skill after negotiating other costs with Guides. The sidekick is not gained until rank 20 is reached. Sidekicks may be human or animal. TN50 is the base roll for commanding follwers to perform dangerous, risky, or selfless actions. The following modifiers may assist Guides in their final determination: 2 bonus shift-Gifts above share*; exemplary leader; returned follower from death; LoC one year, 1 bonus shift-Full share of treasure*; benevolent leader; risks life for follower; other sidekicks present; LoC one month, no bonus-Partial share of treasure*; kind leader; hoenst, 1 penalty shift-No share*; callous leader; breaks oath; leader is incapacitated, 2 penalty shifts-Uncompensated losses; cruel leader; defiller; combat, 3 penalty shifts-Ruthless leader; torture or killed followers. *Animals use special feed and treats instead of shares',
+            'Leadership is the ability to command other sentient beings. With this skill, Heroes direct people in emergency situations, gain followers, and organize others. Leaders slowly acquire followers over time and extensive game play. Leaders acquire charges based on military rank or business organizations. Rolls are necessary for tests of loyalty, morale, and rallying subjects. TNs based on overall attitude: TN50-Revered, honored, TN75-Zealous, devoted, TN100-Sympathetic, considerate, TN125-impartial, apathetic, TN150-Antagonistic, annoyed, TN175-Offensive, spiteful, TN200-Hateful, abhorred. 2 bonus shift-LoC 1 week, elites, rewards, 1 bonus shift-LoC 1 day, regulars, paid, no bonus-LoC 1 hour, enlisted, no pay, 1 penalty shift-LoC 10 min, conscripts, indentured, 2 penalty shift-LoC 1 min, commoners, taxes, combat, 3 penalty shift-LoC 1 round, slaves. LoC – Length of command is the time the Hero has been instructing the crowd, troops, or followers. Heroes gain sidekicks with expertise in this skill after negotiating other costs with Guides. The sidekick is not gained until rank 20 is reached. Sidekicks may be human or animal. TN50 is the base roll for commanding followers to perform dangerous, risky, or selfless actions. The following modifiers may assist Guides in their final determination: 2 bonus shift-Gifts above share*; exemplary leader; returned follower from death; LoC one year, 1 bonus shift-Full share of treasure*; benevolent leader; risks life for follower; other sidekicks present; LoC one month, no bonus-Partial share of treasure*; kind leader; honest, 1 penalty shift-No share*; callous leader; breaks oath; leader is incapacitated, 2 penalty shifts-Uncompensated losses; cruel leader; defiler; combat, 3 penalty shifts-Ruthless leader; torture or killed followers. *Animals use special feed and treats instead of shares',
           limit: 'Universal',
           name: 'Leadership',
           experts: { rally: ['Military Type'], person: ['Specific Follower'] },
@@ -1316,7 +1316,7 @@ export const a: Array<Skills> = [
         {
           base: 'Faith',
           description:
-            'Philosophy is the study of existence, ethics, reason, teh mind and soul based upon great icons of past and present. This skill enables resistance of Influence',
+            'Philosophy is the study of existence, ethics, reason, the mind and soul based upon great icons of past and present. This skill enables resistance of Influence',
           limit: 'Exclusive',
           name: 'Philosophy',
           experts: {
@@ -1346,14 +1346,14 @@ export const a: Array<Skills> = [
         {
           base: 'Employability',
           description:
-            "Presentation represents the Hero's capacity to gain another's interest by use of speaking, body language, and gestures. Use of this skill often needs preparation of props, attire, and printed materials. Once interest is gained, Influence comes into play. A good Presentation is the best way to make first impression; however, making contact and peaking interest is just the beginning. The Hero initiates contact with Presentation. Presentation uses skill combiantion with one-shift bonus. The paired skill infers knowledge of subject area infused into the performance. This skill differs form Ettiquete by requiring some form of preparation. Examples may include research, grooming, or creating media materials. Many social situations necessitate both Presentation and Ettiquette. TN's based on overall attitude: TN50-Revered, honored, TN75-Zealous, devoted, TN100-Sympathetic, considerate, TN125-impartial, apathetic, TN150-Antagonistic, annoyed, TN175-Offensive, spiteful, TN200-Hateful, abhorred",
+            "Presentation represents the Hero's capacity to gain another's interest by use of speaking, body language, and gestures. Use of this skill often needs preparation of props, attire, and printed materials. Once interest is gained, Influence comes into play. A good Presentation is the best way to make first impression; however, making contact and peaking interest is just the beginning. The Hero initiates contact with Presentation. Presentation uses skill combination with one-shift bonus. The paired skill infers knowledge of subject area infused into the performance. This skill differs form Etiquette by requiring some form of preparation. Examples may include research, grooming, or creating media materials. Many social situations necessitate both Presentation and Etiquette. TNs based on overall attitude: TN50-Revered, honored, TN75-Zealous, devoted, TN100-Sympathetic, considerate, TN125-impartial, apathetic, TN150-Antagonistic, annoyed, TN175-Offensive, spiteful, TN200-Hateful, abhorred",
           limit: 'Universal',
           name: 'Presentation',
         },
         {
           base: 'Employability',
           description:
-            'Profiteering includes scams, frauds, and other criminal acts involving wealth and monetary systems. For example, Profiteering determines the target to bribe, an appropriate amount, and route for payment. Entrance to a nightclub may require a bribe, but the doorman might not be the right target. Other skill use includes embezzlement, fencing, fraud, gambling operations, misappropriation, money laundering, racketeering, vice. Specific actiosn may have many parameters used to determine TNs. TN50-Access appropriate bribe, TN75-Detect opportunity for target criminal action, TN100-Lower bribe by 50%, picking wealthy target, TN125-Access profit from target criminal action, TN150-Avoid bribe, set up a racket, determine appropriate ransom; perform fraud on uninvestigated claim, TN175-Predict success of criminal action, TN200-Nearly untraceable sway of public official. Using skill combination, Heroes gain employment. Success produces money from Employability +5, however, there is always a chance to get caught',
+            'Profiteering includes scams, frauds, and other criminal acts involving wealth and monetary systems. For example, Profiteering determines the target to bribe, an appropriate amount, and route for payment. Entrance to a nightclub may require a bribe, but the doorman might not be the right target. Other skill use includes embezzlement, fencing, fraud, gambling operations, misappropriation, money laundering, racketeering, vice. Specific actions may have many parameters used to determine TNs. TN50-Access appropriate bribe, TN75-Detect opportunity for target criminal action, TN100-Lower bribe by 50%, picking wealthy target, TN125-Access profit from target criminal action, TN150-Avoid bribe, set up a racket, determine appropriate ransom; perform fraud on uninvestigated claim, TN175-Predict success of criminal action, TN200-Nearly untraceable sway of public official. Using skill combination, Heroes gain employment. Success produces money from Employability +5, however, there is always a chance to get caught',
           limit: 'Universal',
           name: 'Profiteering',
           experts: {
@@ -1371,7 +1371,7 @@ export const a: Array<Skills> = [
               skill: 'Pharmaceuticals/Toxicology',
             },
             {
-              description: 'Emblezzlement',
+              description: 'Embezzlement',
               skill: 'Business Administration',
             },
           ],
@@ -1416,7 +1416,7 @@ export const a: Array<Skills> = [
         {
           base: 'Deduction',
           description:
-            'Xenosociology embodies knowledge of customs and attitudes of an alien culture. The person may also be familiar with non-traiditonal attitudes, sub-cultures, and similar movements within a culture',
+            'Xenosociology embodies knowledge of customs and attitudes of an alien culture. The person may also be familiar with non-traditional attitudes, sub-cultures, and similar movements within a culture',
           limit: 'Exclusive',
           name: 'Xenosociology, species',
           experts: {
@@ -1458,7 +1458,7 @@ export const a: Array<Skills> = [
         {
           base: 'Memory',
           description:
-            'Astronomy is the study and identification of celestial objects. Astronomy identifies the movement of moons, planets, and stars. It predicts conjunctions, eclipses, seasons, and tides. This includes lunar phases and basic navigation by stars (TN100). Spacefaring and technologically advanced genres studies include knowledge of black holes, dark matter, mapping, quasars, spectral analysis, and stellar observation. This skill facilitates the operation of technologies associated with stars in that genre, including telescopes, radio telescopes, and galactic navigating computers',
+            'Astronomy is the study and identification of celestial objects. Astronomy identifies the movement of moons, planets, and stars. It predicts conjunctions, eclipses, seasons, and tides. This includes lunar phases and basic navigation by stars (TN100). Space-faring and technologically advanced genres studies include knowledge of black holes, dark matter, mapping, quasars, spectral analysis, and stellar observation. This skill facilitates the operation of technologies associated with stars in that genre, including telescopes, radio telescopes, and galactic navigating computers',
           limit: 'Exclusive',
           name: 'Astronomy',
           experts: {
@@ -1566,7 +1566,7 @@ export const a: Array<Skills> = [
         {
           base: 'Dexterity',
           description:
-            'Hide embodies how to stay out of visual sight. Examples include: ducking into shadows or using terrain to cover to stay hidden. Moving generates penalty shifts depending on speed. Experts, using special equipment, can also disguise other senses (smell, taste, touch, and hearing). Vision and sound are the two most common senses masked. Masking scent requires SL 40. Taste and touch require SL 60. In order to not leave tracks, use skill combination with Hunt. Guides should consider additional penalty shifts for each sense masked. Hide uses the TN Match rules for resolution versus Perception. It is impossible to Hide if under casual or direct observation; a momentary distraction may justify use. The mechanic used for Hide is TN match with best Perception. The observer needs to match the TN established by the hider to see the person hiding. If they miss by one shift, they know the space is occupied. If the observer misses by two shifts, they know the direction someon is hiding. If they TN match is missed by more than two shifts, the person is concealed. Movement modifiers include: 2 shift bonus-Under size 0, no light, no sound, 1 shift bonus-Size 0, under one-half speed, low light, obscured, no bonus-Size 1, one-half speed, 1 shift penalty-Size 2, over one-half speed, 2 shift penalty-Over size 2, running, charging',
+            'Hide embodies how to stay out of visual sight. Examples include: ducking into shadows or using terrain to cover to stay hidden. Moving generates penalty shifts depending on speed. Experts, using special equipment, can also disguise other senses (smell, taste, touch, and hearing). Vision and sound are the two most common senses masked. Masking scent requires SL 40. Taste and touch require SL 60. In order to not leave tracks, use skill combination with Hunt. Guides should consider additional penalty shifts for each sense masked. Hide uses the TN Match rules for resolution versus Perception. It is impossible to Hide if under casual or direct observation; a momentary distraction may justify use. The mechanic used for Hide is TN match with best Perception. The observer needs to match the TN established by the hider to see the person hiding. If they miss by one shift, they know the space is occupied. If the observer misses by two shifts, they know the direction someone is hiding. If they TN match is missed by more than two shifts, the person is concealed. Movement modifiers include: 2 shift bonus-Under size 0, no light, no sound, 1 shift bonus-Size 0, under one-half speed, low light, obscured, no bonus-Size 1, one-half speed, 1 shift penalty-Size 2, over one-half speed, 2 shift penalty-Over size 2, running, charging',
           limit: 'Universal',
           name: 'Hide',
           experts: {
@@ -1579,7 +1579,270 @@ export const a: Array<Skills> = [
             ],
           },
         },
+        {
+          base: 'Dexterity',
+          description:
+            'Legerdemain is for hiding objects and performing tricks through distraction and quick movements. Examples would be juggling, sleight of hand, shell games, palming, stage magic/magic tricks (using special props), and pick pocketing. Spell casting with Legerdemain uses TN Match versus Perception to prevent motions from being seen. Escaping ropes, snares, and grapples/pins uses TN match mechanics. A Hero incurs a two-shift penalty for nets and ropes, and a four-shift penalty for standard manacles and squeezing through an area that fits the head but not shoulders. Escaping from rope bindings, manacles, or other restraints requires one minute. Escaping from a net or grapple/pin is a closing stance. Squeezing through tight spaces takes one minute, maybe longer, depending on space length (TN50). Pick-pocketing with Legerdemain uses skill match with Perception. A two-shift penalty is assessed without employing a distraction. A practitioner vanishes an item of their size minus 5 or smaller without penalty. A human could vanish a size(-4) item, roughly the size of a hummingbird. The object must have a destination that is concealed from view. This space must be within or adjacent to where it is vanished. One size greater is one shift, two sizes great is three shifts, three sizes greater is six shifts, four sizes greater is nine shifts, same size is twelve shifts',
+          limit: 'Universal',
+          name: 'Legerdemain',
+          experts: {
+            escape: ['chain', 'handcuff', 'rope', 'straitjacket'],
+            hide: ['coin', 'bird', 'eggs', 'rabbits', 'wallet'],
+          },
+        },
       ],
+      sports: [
+        {
+          base: 'Body/2',
+          description:
+            'Aerosports enables performance of skydiving, parasailing, parachuting, wing walking, and free-falling with better control. Combat while performing such activities normally requires a further shift. This shift is negated with Aerosports (TN100) and is made at least once per encounter',
+          limit: 'Acclimatable',
+          name: 'Aerosports',
+          experts: {
+            style: ['skydiving', 'parasailing', 'parachuting'],
+          },
+        },
+        {
+          base: 'Body/2',
+          description:
+            'Aquatics enables performance of water ballet, swimming, diving, scuba diving, snorkeling, water-skiing, wake-boarding. Combat while performing such activities normally requires a further shift. This shift is negated with Aquatics (TN100) and is made at least once per encounter',
+          limit: 'Acclimatable',
+          name: 'Aquatics',
+          experts: {
+            style: [
+              'water ballet',
+              'swimming',
+              'diving',
+              'scuba diving',
+              'snorkeling',
+              'water-skiing',
+              'wake-boarding',
+            ],
+          },
+        },
+        {
+          base: 'Body/2',
+          description:
+            'Athletics allows the user to successfully complete and participate in physical individual and team sports. Other uses include running, pole-vaulting over a fence, and jumping. Athletes have rigorous training to develop endurance in such activities may maintain such for prolonged effect (TN100). Extraordinary feats of endurance may add shifts',
+          limit: 'Acclimatable',
+          name: 'Athletics',
+          experts: {
+            sport: ['Specific Sport'],
+          },
+          pairs: [
+            { description: 'Competitive swimming', skill: 'Aquatics' },
+            {
+              description: 'Skiing; Ice skating',
+              skill: 'Extreme Environments',
+            },
+            { description: 'Wrestling', skill: 'Combat Unarmed' },
+            { description: 'Biking; Sledding', skill: 'Drive' },
+          ],
+        },
+        {
+          base: 'Body/2',
+          description:
+            'Gymnastics enables performance of extreme feats of physical prowess, such as tightrope walking, balance beam, climbing, parallel bars (even and uneven), rings, flexibility stretching, trapeze, bungee cord jumping, and tumbling. This area does not allow sustained flight. The Guide will determine the TN depending on the difficulty of attempted routine. TN25-Somersault, TN50-Handstand; cartwheel; tumbling, TN75-Splits; Walking on hands, TN100-Giants; aerials; climbing vertical wall, TN125-Full rotation flip, TN150-Tightrope; combination of three maneuvers, TN200-Combination of four maneuvers',
+          limit: 'Universal',
+          name: 'Gymnastics',
+          experts: {
+            competitive: [
+              'balance beam',
+              'rings',
+              'spring floor',
+              'uneven bars',
+              'vault',
+            ],
+            style: [
+              'bungee cord jumping',
+              'climbing',
+              'tightrope walking',
+              'trapeze',
+              'tumbling',
+            ],
+          },
+          pairs: [
+            { description: 'Competitive floor', skill: 'Dance' },
+            { description: 'Competitive vault', skill: 'Athletics' },
+          ],
+        },
+      ],
+      talk: [
+        {
+          base: 'Deduction',
+          description:
+            'Computer Science involves programming in integrated technology. Use includes analog, computing machine design, techniques of program processes and implementation, databases, software, hardware, and computer system security. Computer Science allows programming in pseudo-code and flow-charting. Most systems interface with a computer language in some form. Computer languages are covered under Language',
+          limit: 'Acclimatable',
+          name: 'Computer Science',
+          experts: {
+            system: ['Specific Operating System'],
+          },
+          pairs: [
+            {
+              description: 'Artificial intelligence',
+              skill: 'Mathematics & Philosophy',
+            },
+            { description: 'Informatics', skill: 'Library Networking' },
+            { description: 'Robot command code', skill: 'Robotics' },
+            { description: 'Security', skill: 'Cryptography' },
+            {
+              description: 'Video gaming',
+              skill: 'Military Science & Language',
+            },
+          ],
+        },
+        {
+          base: 'Mind/2',
+          description:
+            'Cryptography is the art of making and breaking codes. This skill is used in skill combination with Mathematics or Language. Math pairs with numeric codes; Language pairs for riddling games. Some rare codes may be based on History, Artistry (pictures), or Geography (maps). 2 shift bonus-Possess key codes, 1 shift bonus-Use of cipher device; reference material, no shift-No key or partial list of keys, 1 shift penalty-Math skill below rank 20, 2 shift penalty-Shifting symbols based on time reference. Base TN, TN50-Transposition cipher, TN75-Substitution cipher, TN100-Cryptosystem, replacement meaning code, TN150-Cryptosystem with variable keys, TN200-Algorithmic (integer factorization, logarithmic)',
+          limit: 'Universal',
+          name: 'Cryptography',
+        },
+        {
+          base: 'Mind/2',
+          description:
+            'Journalism embodies representation of events in public media. The means of disseminating information to the public includes newspaper, cinema, television, radio, internet, and holographic through photography, publication, and printing. Skill combination with Deception may disseminate misinformation or produce counterfeit documents',
+          limit: 'Acclimatable',
+          name: 'Journalism/Media',
+          experts: {
+            style: [
+              'blog',
+              'cinema',
+              'newspaper',
+              'novels',
+              'radio',
+              'television',
+              'webcasting',
+              'photography',
+            ],
+          },
+        },
+        {
+          base: 'Memory',
+          description:
+            "Language includes but is not restricted to computer languages, semaphore, lip reading, regional languages (pidgin), guild languages (beggars' or thugs'), arcane, deaf/mute/signs language, and military language. Language provides the ability to speak, understand, and read a specific language depending on the forms of the language available. Not all languages have both written and spoken forms. This skill must be acquired for each desired language Proficiency is determined by rank. Rolls for Language are required if rank is under 20. TNs depend on level of communication desired, per Guide discretion. The goal TN is two shifts (50 higher) than the communication rank desired. Example: Elena has a rank 15 in Spanish. She wishes fluent conversation. This requires 20 (fluent) + 50 = TN70. Elena needs a die roll of 55. Suppose Elena wanted to appear native with a dialect (Rank 50). A roll of 50 + 50 = TN100 is required, with a die roll of 85 needed. Proficiency: 1 to 14-Grammar and Middle School levels, 15 to 19-Nearly fluent; High School level, 20 to 29-Fluent; Collegiate level, 30 to 39-Can speak without accent, use idioms and cliches of a particular language, 40 to 49-Speaks so well as to be able to disguise as a native of the particular country, 50+ Fully fluent and literate with sophisticated vocabulary; can now imitate multiple dialects in the language. Use of and exposure to non-native languages during a campaign may grant HiPs. Lip reading is a skill combination with Perception and a standard one shift penalty, barring any other mitigating circumstances",
+          limit: 'Exclusive',
+          name: 'Language',
+          experts: {
+            dialect: ['Specific Dialect', 'Ancient Dialect', 'Lip Reading'],
+          },
+        },
+        {
+          base: 'Deduction',
+          description:
+            'Linguistics covers knowledge of the structure and phonics of various languages. Skill use can establish basic communication with anyone, regardless of languages spoken, and even translate to a small extent. It includes grammar and developmental history of a language, but not cultural intertwining. Rolls for Linguistics are resolved similar to that of Language. Goal TNs are two shifts higher (50 higher) than the communication rank desired. Rank 70 allows fluency (fluency 20, 20+50 = 70) in all languages, provided that sounds and gestures required can be imitated. More difficult languages may require higher rank to achieve fluency. Some xenophobic races and societies purposely make communication difficult, requiring touch with specialized appendages or other challenges, to learn the language. Such cultures also ignore others trying to converse. Linguistics is a means of communication and does not replace any specific tongue. Use identifies the speaker and non-native. Genres rarely extend Linguistics to computer languages, but in such rare instances require sophisticated equipment such as a special keyboard. Mathematics may also be considered instead of Linguistics for computers in some genres',
+          limit: 'Universal',
+          name: 'Linguistics',
+        },
+        {
+          base: 'Memory',
+          description:
+            'Literature encompasses knowledge about all types of literature, including classic works, modern literature, lyrics, creative writing, and poetry. Skill measures ability to understand such works, and processes of constructing books, and writing',
+          limit: 'Exclusive',
+          name: 'Literature',
+          experts: {
+            style: ['restoration'],
+            author: ['Poe', 'Twain'],
+          },
+        },
+        {
+          base: 'Memory',
+          description:
+            'All speaking creatures have Native Tongue at rank 20 if this skill is not listed. Once the Hero or creature advances it beyond rank 20, then Native Tongue is recorded on their character sheet and contributes to Talk. Alternatively, those creatures comparatively deficient in language have Native Tongue recorded at a lower rank',
+          limit: 'Exclusive',
+          name: 'Native Tongue',
+          experts: {
+            dialect: ['Specific Dialect', 'Ancient Dialect', 'Lip Reading'],
+          },
+        },
+        {
+          base: 'Deduction',
+          description:
+            "Public Speaking involves speech delivery to a group of people, a target audience, or other listeners to hold interest. Unlike Etiquette and Presentation, Public Speaking is the skill used to hold attention over some period of time and may require multiple rolls. In some genres, presentations involve other media besides talking. In gatherings, a Hero may use Presentation to gain the targets' attention. Etiquette modifies the targets' reaction. Lastly, Public Speaking holds the targets' attention to convey a message. At some later point, Influence may change the target's attitude toward the Hero. TNs based on overall attitude TN50-Revered, honored, TN75-Zealous, devoted, TN100-Sympathetic, considerate, TN125-impartial, apathetic, TN150-Antagonistic, annoyed, TN175-Offensive, spiteful, TN200-Hateful, abhorred. Speakers of specific skills use skill combination rules. Examples include Laws, Theology, and Artistry. An expert may consider creating a combination skill",
+          limit: 'Universal',
+          name: 'Public Speaking',
+          experts: {
+            topic: ['passivism', 'motivation', 'weight'],
+          },
+        },
+      ],
+      expertise: [
+        {
+          base: 'Mind/2',
+          description:
+            'Mind Skill Expertise modifies a specific aspect of a Mind skill special to that character',
+          limit: 'Any',
+          name: 'Mind Skill Expertise',
+        },
+        {
+          base: 'Body/2',
+          description:
+            'Body Skill Expertise modifies a specific aspect of a Body skill special to that character',
+          limit: 'Any',
+          name: 'Body Skill Expertise',
+        },
+        {
+          base: 'Soul/2',
+          description:
+            'Soul Skill Expertise modifies a specific aspect of a Soul skill special to that character',
+          limit: 'Any',
+          name: 'Soul Skill Expertise',
+        },
+        {
+          base: 'Wealth/2',
+          description:
+            'Wealth Skill Expertise modifies a specific aspect of a Wealth skill special to that character',
+          limit: 'Any',
+          name: 'Wealth Skill Expertise',
+        },
+        {
+          base: 'Sum of all resources / 8',
+          description:
+            'All Resources Skill Expertise modifies a specific aspect of an All resources skill special to that character',
+          limit: 'Any',
+          name: 'All Resources Skill Expertise',
+        },
+      ],
+      trick: [
+        {
+          base: 'Mind/2',
+          description:
+            'Mind Skill Tricks is use of a Mind skill special to that character',
+          limit: 'Any',
+          name: 'Mind Skill Tricks, trick name',
+        },
+        {
+          base: 'Body/2',
+          description:
+            'Body Skill Tricks is use of a Body skill special to that character',
+          limit: 'Any',
+          name: 'Body Skill Tricks, trick name',
+        },
+        {
+          base: 'Soul/2',
+          description:
+            'Soul Skill Tricks is use of a Soul skill special to that character',
+          limit: 'Any',
+          name: 'Soul Skill Tricks, trick name',
+        },
+        {
+          base: 'Wealth/2',
+          description:
+            'Wealth Skill Tricks is use of a Wealth skill special to that character',
+          limit: 'Any',
+          name: 'Wealth Skill Tricks, trick name',
+        },
+        {
+          base: 'Sum of all resources / 8',
+          description:
+            'All Resources Skill Tricks is use of an All Resources skill special to that character',
+          limit: 'Any',
+          name: 'All Resources Skill Tricks, trick name',
+        },
+      ],
+      // TODO all skills are done, however
+      // I need to replace ... with line breaks
+      // and a few skills are 'any' that were accidentally left to Universal -- few
     },
   },
 ]
