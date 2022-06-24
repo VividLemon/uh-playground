@@ -2,7 +2,6 @@ import type { GameSkillLimit, GameBaseResource } from '.'
 
 interface GameSkill {
   name: string
-  abbreviation: string
   description: string
   limit: GameSkillLimit
   base: GameBaseResource

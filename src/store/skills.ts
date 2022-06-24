@@ -1,7 +1,7 @@
 import { GameSkills } from '@/types'
 import { defineStore } from 'pinia'
-import { fs, path, notification } from '@tauri-apps/api'
-import { useI18n } from 'vue-i18n'
+import { fs, notification } from '@tauri-apps/api'
+import { getAssetPath } from '@/util'
 
 interface State {
   skills: Array<GameSkills>
@@ -16,14 +16,10 @@ export const useSkillStore = defineStore('skills', {
   },
   actions: {
     async getSkillsFilePath(): Promise<string> {
-      return await path.resolve(
-        await path.resourceDir(),
-        'assets',
-        'skills.json'
-      )
+      return await getAssetPath('skills.json')
     },
     async fetchSkillsFs(): Promise<void> {
-      const { t } = useI18n()
+      // const { t } = useI18n()
       try {
         const filePath = await this.getSkillsFilePath()
         this.skills = JSON.parse(await fs.readTextFile(filePath))
@@ -31,13 +27,13 @@ export const useSkillStore = defineStore('skills', {
       } catch (error) {
         this.skills = []
         notification.sendNotification({
-          title: t('errors.error'),
-          body: t('errors.skill.fetchSkillBody'),
+          title: "t('errors.error')",
+          body: "t('errors.skill.fetchSkillBody')",
         })
       }
     },
     async saveSkillsFs(): Promise<void> {
-      const { t } = useI18n()
+      // const { t } = useI18n()
       try {
         const filePath = await this.getSkillsFilePath()
         await fs.writeFile({
@@ -46,8 +42,8 @@ export const useSkillStore = defineStore('skills', {
         })
       } catch (error) {
         notification.sendNotification({
-          title: t('errors.error'),
-          body: t('errors.skill.saveSkillBody'),
+          title: "t('errors.error')",
+          body: "t('errors.skill.saveSkillBody')",
         })
       }
     },

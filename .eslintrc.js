@@ -8,8 +8,9 @@ module.exports = {
     'plugin:vue/vue3-recommended',
     '@vue/standard',
     'prettier',
+    'plugin:jsdoc/recommended',
   ],
-  plugins: ['prettier'],
+  plugins: ['prettier', 'jsdoc'],
   parserOptions: {
     ecmaVersion: 2020,
   },

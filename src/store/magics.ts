@@ -1,7 +1,8 @@
 import { GameMagics } from '@/types'
 import { defineStore } from 'pinia'
-import { fs, path, notification } from '@tauri-apps/api'
+import { fs, notification } from '@tauri-apps/api'
 import { useI18n } from 'vue-i18n'
+import { getAssetPath } from '@/util'
 
 interface State {
   magics: Array<GameMagics>
@@ -16,11 +17,7 @@ export const useMagicStore = defineStore('magics', {
   },
   actions: {
     async getMagicsFilePath(): Promise<string> {
-      return await path.resolve(
-        await path.resourceDir(),
-        'assets',
-        'magics.json'
-      )
+      return await getAssetPath('magics.json')
     },
     async fetchMagicsFs(): Promise<void> {
       const { t } = useI18n()

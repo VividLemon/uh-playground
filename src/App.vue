@@ -14,6 +14,7 @@
 </template>
 
 <script setup lang="ts">
+
 // TODO the initial page should be the current played character sheet. It will contain a dropdown to switch the sheet over to a different
 // world. The worlds can be added on an edit sheet page. The edit sheet page will contain the optional ability to import universal skills
 // There will be an edit button directly in the page that will send you over, for ease of use.
