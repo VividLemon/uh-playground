@@ -22,7 +22,9 @@ export const useSkillStore = defineStore('skills', {
       // const { t } = useI18n()
       try {
         const filePath = await this.getSkillsFilePath()
-        this.skills = JSON.parse(await fs.readTextFile(filePath))
+        this.skills = JSON.parse(await fs.readTextFile(filePath), (_, value) =>
+          typeof value === 'string' ? value.replaceAll('...', '<br>') : value
+        )
         // TODO this should instead just be caught downstream
       } catch (error) {
         this.skills = []
