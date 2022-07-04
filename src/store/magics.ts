@@ -1,7 +1,6 @@
-import { GameMagics } from '@/types'
+import type { GameMagics } from '@/types'
 import { defineStore } from 'pinia'
-import { fs, notification } from '@tauri-apps/api'
-import { useI18n } from 'vue-i18n'
+import { fs } from '@tauri-apps/api'
 import { getAssetPath } from '@/util'
 
 interface State {
@@ -20,32 +19,23 @@ export const useMagicStore = defineStore('magics', {
       return await getAssetPath('magics.json')
     },
     async fetchMagicsFs(): Promise<void> {
-      const { t } = useI18n()
-      try {
-        const filePath = await this.getMagicsFilePath()
-        this.magics = JSON.parse(await fs.readTextFile(filePath))
-      } catch (error) {
-        this.magics = []
-        notification.sendNotification({
-          title: t('errors.error'),
-          body: t('errors.magic.fetchMagicBody'),
-        })
-      }
+      const filePath = await this.getMagicsFilePath()
+      this.magics = JSON.parse(await fs.readTextFile(filePath))
+      // notification.sendNotification({
+      //   title: t('errors.error'),
+      //   body: t('errors.magic.fetchMagicBody'),
+      // })
     },
     async saveMagicsFs(): Promise<void> {
-      const { t } = useI18n()
-      try {
-        const filePath = await this.getMagicsFilePath()
-        await fs.writeFile({
-          contents: JSON.stringify(this.magics),
-          path: filePath,
-        })
-      } catch (error) {
-        notification.sendNotification({
-          title: t('errors.error'),
-          body: t('errors.magic.saveMagicBody'),
-        })
-      }
+      const filePath = await this.getMagicsFilePath()
+      await fs.writeFile({
+        contents: JSON.stringify(this.magics),
+        path: filePath,
+      })
+      // notification.sendNotification({
+      //   title: t('errors.error'),
+      //   body: t('errors.magic.saveMagicBody'),
+      // })
     },
   },
 })
